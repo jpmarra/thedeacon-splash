@@ -1,0 +1,48 @@
+///COLORS ///
+$white: #FFFFFF;
+$black: #111111;
+$terracottaDark: #D27154;
+$terracottaMedium: #DC7A5B;
+$terracottaLight: #EB9B82;
+$stone: #F6F0E3;
+$goldenPear: #C9A128;
+$goldenPearLight: #EFCF4F;
+$lavender: #D5DDF1;
+$lavenderDark: #6577A6;
+$blue: #A2D7CC;
+$blueDark: #58A293;
+
+
+/// TEXT MIX INS //
+@mixin primary-header {
+    font-size: 140px;
+    letter-spacing: 1.25px;
+}
+
+@mixin h1-heading {
+    font-size: 60px;
+    letter-spacing: .75px;
+    line-height: 62px;
+}
+
+@mixin body-large {
+    font-size: 22px;
+    letter-spacing: .25px;
+    line-height: 48px;
+}
+
+
+// ELEMENT MIXINS //
+@mixin primary-button($background, $text, $hover-background, $hover-text) {
+    height: 50px;
+    width: 137px;
+    border: 0;
+    background-color: $background;
+    color: $text;
+
+    &:hover {
+        background-color: $hover-background;
+        color: $hover-text;
+        border: 1.5px solid $hover-text;
+    }
+}

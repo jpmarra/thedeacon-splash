@@ -1,0 +1,27 @@
+.deacon-splash {
+    min-height: 100vh;
+    padding: 0 40px;
+    background-color: $terracottaDark;
+
+    &__container {
+        padding-top: 220px;
+        margin-left: 40px;
+    }
+
+    &__hero {
+        @include primary-header;
+
+        margin-bottom: 40px;
+    }
+
+    &__intro {
+        @include body-large;
+
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        @include primary-button($stone, $black, transparent, $stone);
+    }
+}
