@@ -12,6 +12,11 @@
         @include primary-header;
 
         margin-bottom: 40px;
+
+        &-animated {
+            color: $white;
+            border-bottom: 5px solid $black;
+        }
     }
 
     &__intro {

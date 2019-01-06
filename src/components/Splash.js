@@ -1,13 +1,37 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class Splash extends Component {
+
+    constructor() {
+        super();
+
+        this.state = {
+            currentWordIdx: 0,
+            currentWord: 'Gather',
+            words: ['Gather', 'Laugh', 'Celebrate', 'Create', 'Collaborate', 'Relax', 'Enjoy']
+        }
+    }
+
+    componentDidMount() {
+        this.wordInterval = setInterval(() => this.changeWord(), 500);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.wordInterval);
+    }
+
+    changeWord() {
+        const currentIdx = this.state.words.indexOf(this.state.currentWord);
+        const newIdx = currentIdx >= this.state.words.length ? 0 : currentIdx + 1;
+        this.setState({ currentWord: this.state.words[newIdx] });
+    }
   render() {
     return (
       <div className="deacon-splash">
           <div className="deacon-splash__container">
               <header className="deacon-splash__hero">
-                  <span className="deacon-splash__hero">A place to </span>
-                  <span className="deacon-splash__hero">Gather</span>
+                  <span className="deacon-splash__hero-text">A place to </span>
+                  <span className="deacon-splash__hero-animated">{this.state.currentWord}</span>
               </header>
               <div className="deacon-splash__intro">
                 The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.
@@ -19,4 +43,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Splash;
