@@ -1,5 +1,6 @@
 @import '/variables.scss';
 @import '/splash.scss';
+@import '/contentmodule.scss';
 
 body {
       margin: 0;
@@ -10,4 +11,10 @@ body {
             sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+}
+
+.deacon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { ReactComponent as Logo } from '../assets/Logo-Hor-Large.svg';
+import { ReactComponent as Logo } from '../assets/icons/Logo-Hor-Large.svg';
 import TopNav from './TopNav';
-import ContentModule from './ContentModule';
 
 class Splash extends Component {
 

@@ -35,4 +35,14 @@
     &__button {
         @include primary-button($stone, $black, transparent, $stone);
     }
+
+    &__outro {
+        margin: 40px 0 100px 0;
+        width: 50%;
+        text-align: center;
+
+        &-opening {
+            border-bottom: 5px solid $goldenPear;
+        }
+    }
 }
