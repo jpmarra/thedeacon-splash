@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { ReactComponent as Logo } from '../assets/icons/Logo-Hor-Large.svg';
-import TopNav from './TopNav';
 
 class Splash extends Component {
 
@@ -30,10 +28,6 @@ class Splash extends Component {
   render() {
     return (
       <div className="deacon-splash">
-          <div className='deacon-splash__nav-container'>
-            <Logo className='deacon-splash__logo'/>
-            <TopNav />
-          </div>
           <div className="deacon-splash__container">
               <header className="deacon-splash__hero">
                   <span className="deacon-splash__hero-text">A place to </span>
