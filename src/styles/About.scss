@@ -1,0 +1,36 @@
+.deacon-about {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: $stone;
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px 100px;
+    }
+
+    &__copy {
+        margin: 0 100px;
+        display: flex;
+        flex-direction: row;
+
+        &-description {
+            width: 55%;
+            border-right: 5px solid $goldenPear;
+            &-body {
+                margin-right: 20px;
+            }
+        }
+
+        &-details {
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+
+            &-container {
+                margin-left: 20px;
+                width: 50%;
+            }
+        }
+    }
+}

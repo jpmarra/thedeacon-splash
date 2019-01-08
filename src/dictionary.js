@@ -7,6 +7,12 @@ const dictionary = {
     learnMore: 'Learn More',
     splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave this place.',
     openingDate: ' Coming early spring 2019.',
+    aboutTitle: 'ABOUT THE DEACON',
+    about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is grounded in an unexpected color palette and mood. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
+    roomsTitle: 'THE ROOMS',
+    rooms: 'Eight uniquely designed rooms, a master chef’s kitchen and entertainment space are just a few of the amenities provided at The Deacon.',
+    spaceTitle: 'THE SPACE',
+    space: 'Vaulted ceilings and arched windows set the backdrop of this space’s rich history, while modern touches and design nods make The Deacon a contemporary curated space.',
     contentModules: [
         {
             title: 'CELEBRATE',
