@@ -5,36 +5,38 @@ import Dictionary from '../dictionary';
 
 const About = () => (
     <div id='about' className='deacon-about'>
-        <div className='deacon-about__images'>
-            <img src={About1} alt='furniture plans' />
-            <img src={About2} alt='blueprints' />
-        </div>
-        <div className='deacon-about__copy'>
-            <div className='deacon-about__copy-description'>
-                <div className='deacon-about__copy-description-title'>
-                    {Dictionary.aboutTitle}
-                </div>
-                <div className='deacon-about__copy-description-body'>
-                    {Dictionary.about}
-                </div>
-
+        <div className='deacon-about__container'>
+            <div className='deacon-about__images'>
+                <img className='deacon-about__images-left'src={About1} alt='furniture plans' />
+                <img src={About2} alt='blueprints' />
             </div>
-            <div className='deacon-about__copy-details'>
-                <div className='deacon-about__copy-details-container'>
+            <div className='deacon-about__copy'>
+                <div className='deacon-about__copy-description'>
+                    <div className='deacon-about__copy-description-title'>
+                        {Dictionary.aboutTitle}
+                    </div>
+                    <div className='deacon-about__copy-description-body'>
+                        {Dictionary.about}
+                    </div>
+
+                </div>
+                <div className='deacon-about__copy-details'>
+                    <div className='deacon-about__copy-details-container'>
+                        <div className='deacon-about__copy-details-container-title'>
+                            {Dictionary.roomsTitle}
+                        </div>
+                        <div className='deacon-about__copy-details-container-body'>
+                            {Dictionary.rooms}
+                        </div>
+                    </div>
+                    <div className='deacon-about__copy-details-container'>
                     <div className='deacon-about__copy-details-container-title'>
-                        {Dictionary.roomsTitle}
+                        {Dictionary.spaceTitle}
                     </div>
                     <div className='deacon-about__copy-details-container-body'>
-                        {Dictionary.rooms}
+                        {Dictionary.space}
                     </div>
-                </div>
-                <div className='deacon-about__copy-details-container'>
-                <div className='deacon-about__copy-details-container-title'>
-                    {Dictionary.spaceTitle}
-                </div>
-                <div className='deacon-about__copy-details-container-body'>
-                    {Dictionary.space}
-                </div>
+                    </div>
                 </div>
             </div>
         </div>

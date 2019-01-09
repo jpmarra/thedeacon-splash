@@ -27,19 +27,21 @@ class App extends Component {
         <TopNav handleScroll={this.handleScroll.bind(this)}/>
       </div>
         <Splash />
-        {Dictionary.contentModules.map((content, idx) => (
-            <ContentModule
-                key={idx}
-                title={content.title}
-                copy={content.copy}
-                image={content.image}
-                imageDescriptor={content.imageDescriptor}
-                orientation={content.orientation}
-            />
-        ))}
-        <div className='deacon-splash__outro'>
-            <span>{Dictionary.splashOutro}</span>&nbsp;
-            <span className='deacon-splash__outro-opening'>{Dictionary.openingDate}</span>
+        <div className='deacon-splash__content-container'>
+            {Dictionary.contentModules.map((content, idx) => (
+                <ContentModule
+                    key={idx}
+                    title={content.title}
+                    copy={content.copy}
+                    image={content.image}
+                    imageDescriptor={content.imageDescriptor}
+                    orientation={content.orientation}
+                />
+            ))}
+            <div className='deacon-splash__outro'>
+                <span>{Dictionary.splashOutro}</span>&nbsp;
+                <span className='deacon-splash__outro-opening'>{Dictionary.openingDate}</span>
+            </div>
         </div>
         <About />
       </div>

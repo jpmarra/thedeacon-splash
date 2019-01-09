@@ -1,11 +1,18 @@
 .deacon-splash {
     min-height: 100vh;
-    padding: 0 40px;
+    width: 100%;
     background-color: $terracottaDark;
 
     &__container {
         padding-top: 220px;
-        margin-left: 40px;
+        margin-left: 80px;
+    }
+
+    &__content-container {
+        width: 1246px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__hero {
