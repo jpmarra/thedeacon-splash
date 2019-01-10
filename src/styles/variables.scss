@@ -72,8 +72,8 @@ $blueDark: #58A293;
 @mixin body-small {
     font-family: 'value-serif-bold';
     font-size: 15px;
-    letter-spacing: .25px;
-    line-height: 48px;
+    letter-spacing: .5px;
+    line-height: 23px;
 }
 
 @mixin label {

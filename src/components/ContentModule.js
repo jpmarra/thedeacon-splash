@@ -4,9 +4,9 @@ const ContentModule = ({ title, copy, image, imageDescriptor, orientation }) => 
     <div className='deacon-content-module'>
         {orientation === 'right' ?
             (
-                <div className='deacon-content-module__container'>
-                    <div className='deacon-content-module__text  right'>
-                        <div className='deacon-content-module__text-title'>
+                <div className={`deacon-content-module__container ${title.split(' ')[0]}`}>
+                    <div className={`deacon-content-module__text right ${title.split(' ')[0]}`}>
+                        <div className={`deacon-content-module__text-title ${title.split(' ')[0]}`}>
                             {title}
                         </div>
                         <div className='deacon-content-module__text-copy'>
@@ -21,14 +21,14 @@ const ContentModule = ({ title, copy, image, imageDescriptor, orientation }) => 
                 </div>
             ) :
             (
-                <div className='deacon-content-module__container'>
+                <div className={`deacon-content-module__container ${title.split(' ')[0]}`}>
                     <img
                         className='deacon-content-module__image left'
                         src={image}
                         alt={imageDescriptor}
                     />
-                    <div className='deacon-content-module__text left'>
-                        <div className='deacon-content-module__text-title'>
+                    <div className={`deacon-content-module__text left ${title.split(' ')[0]}`}>
+                        <div className={`deacon-content-module__text-title ${title}`}>
                             {title}
                         </div>
                         <div className='deacon-content-module__text-copy'>

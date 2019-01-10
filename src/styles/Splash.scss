@@ -19,7 +19,7 @@
     }
 
     &__content-container {
-        width: 1246px;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,7 +32,7 @@
 
         &-animated {
             color: $white;
-            border-bottom: 5px solid $black;
+            border-bottom: 6px solid $black;
         }
     }
 
@@ -48,12 +48,14 @@
     }
 
     &__outro {
+        @include h2-heading;
+
         margin: 40px 0 100px 0;
-        width: 50%;
+        width: 80%;
         text-align: center;
 
         &-opening {
-            border-bottom: 5px solid $goldenPear;
+            border-bottom: 6px solid $goldenPear;
         }
     }
 }

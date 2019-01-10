@@ -7,6 +7,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        &.CELEBRATE {
+            background-image: url('../assets/arches/Celebrate/Large.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     &__image {
@@ -24,15 +30,45 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50%;
 
         &-title,
         &-copy {
-            width: 60%;
+            width: 70%;
         }
 
         &-title {
-            margin-bottom: 20px;
+            @include h2-heading;
+
+            margin-bottom: 10px;
+
+
+            &.CELEBRATE {
+                color: $terracottaDark;
+            }
+
+            &.RELAX {
+                color: $lavenderDark;
+            }
+
+            &.WORK {
+                color: $blueDark;
+            }
+        }
+
+        &-copy {
+            @include body-small;
+        }
+
+        &.RELAX {
+            background-image: url('../assets/arches/Relax/Large.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &.WORK {
+            background-image: url('../assets/arches/Work/Large.svg');
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }
