@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'value-serif-bold';
+    src: url('../assets/fonts/value-serif-bold.eot');
+    src: url('../assets/fonts/value-serif-bold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/value-serif-bold.woff') format('woff'),
+         url('../assets/fonts/value-serif-bold.woff2') format('woff2'),
+         url('../assets/fonts/value-serif-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Krana Fat A';
+    src: url('../assets/fonts/Krana Fat A.eot'),
+         url('../assets/fonts/Krana Fat A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @import '/variables.scss';
 @import 'topnav.scss';
 @import '/splash.scss';
@@ -19,16 +40,4 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &__nav-container {
-        background-color: $terracottaDark;
-        width: 100%;
-        padding-top: 40px;
-        display: flex;
-        justify-content: space-between;
-
-        &-logo {
-            padding-left: 40px;
-        }
-    }
 }

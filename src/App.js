@@ -3,8 +3,6 @@ import SweetScroll from 'sweet-scroll';
 import Splash from './components/Splash.js';
 import ContentModule from './components/ContentModule';
 import About from './components/About';
-import TopNav from './components/TopNav';
-import { ReactComponent as Logo } from './assets/icons/Logo-Hor-Large.svg';
 import Dictionary from './dictionary';
 import 'normalize.css';
 import './styles/index.scss';
@@ -22,11 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="deacon">
-      <div className='deacon__nav-container'>
-        <Logo className='deacon__nav-container-logo'/>
-        <TopNav handleScroll={this.handleScroll.bind(this)}/>
-      </div>
-        <Splash />
+        <Splash handleScroll={this.handleScroll.bind(this)}/>
         <div className='deacon-splash__content-container'>
             {Dictionary.contentModules.map((content, idx) => (
                 <ContentModule

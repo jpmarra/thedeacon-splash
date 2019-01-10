@@ -15,18 +15,70 @@ $blueDark: #58A293;
 
 /// TEXT MIX INS //
 @mixin primary-header {
+    font-family: 'Krana Fat A';
     font-size: 140px;
     letter-spacing: 1.25px;
 }
 
 @mixin h1-heading {
+    font-family: 'Krana Fat A';
     font-size: 60px;
     letter-spacing: .75px;
     line-height: 62px;
 }
 
+@mixin h2-heading {
+    font-family: 'Krana Fat A';
+    font-size: 44px;
+    letter-spacing: .5px;
+    line-height: 48px;
+}
+
+@mixin h3-heading {
+    font-family: 'Krana Fat A';
+    font-size: 32px;
+    letter-spacing: .5px;
+    line-height: 40px;
+}
+
+@mixin h4-heading {
+    font-family: 'Krana Fat A';
+    font-size: 24px;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+
+@mixin h5-heading {
+    font-family: 'Krana Fat A';
+    font-size: 18px;
+    letter-spacing: .25px;
+    line-height: 24px;
+}
+
+@mixin primary-body {
+    font-family: 'value-serif-bold';
+    font-size: 32px;
+    letter-spacing: .25px;
+    line-height: 48px;
+}
+
 @mixin body-large {
+    font-family: 'value-serif-bold';
     font-size: 22px;
+    letter-spacing: .25px;
+    line-height: 48px;
+}
+
+@mixin body-small {
+    font-family: 'value-serif-bold';
+    font-size: 15px;
+    letter-spacing: .25px;
+    line-height: 48px;
+}
+
+@mixin label {
+    font-family: 'value-serif-bold';
+    font-size: 12px;
     letter-spacing: .25px;
     line-height: 48px;
 }
@@ -34,15 +86,38 @@ $blueDark: #58A293;
 
 // ELEMENT MIXINS //
 @mixin primary-button($background, $text, $hover-background, $hover-text) {
+    @include h5-heading;
+
     height: 50px;
     width: 137px;
     border: 0;
     background-color: $background;
     color: $text;
+    cursor: pointer;
 
     &:hover {
         background-color: $hover-background;
         color: $hover-text;
         border: 1.5px solid $hover-text;
+    }
+}
+
+@mixin round-button($background, $text, $hover-background, $hover-text) {
+    @include h5-heading;
+
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $background;
+    color: $text;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        background-color: $hover-background;
+        color: $hover-text;
     }
 }
