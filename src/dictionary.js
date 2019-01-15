@@ -42,6 +42,17 @@ const dictionary = {
         copy: 'At the corner of 16th & Christian Street in Center City Philadelphia stands the First African Baptist Church. A building and congregation rich in history. We intend to carry this tradition on with The Deacon as a place to gather, entertain, stay, and collaborate.',
         image: History,
         imageDescriptor: 'History'
+    },
+    contact: {
+        header: 'We look forward to helping you set the perfect environment for your visit. Let’s get in touch.',
+        locationTitle: 'LOCATION',
+        locationStreet: '1600 Christian Street',
+        locationLocale: 'Philadelphia, PA',
+        locationZip: '19146',
+        generalTitle: 'GENERAL INQUIRIES',
+        generalBody: 'hello@thedeaconphl.com',
+        pressTitle: 'PRESS & PARTNERSHIPS',
+        pressBody: 'press@thedeaconphl.com'
     }
 }
 

@@ -1,0 +1,72 @@
+.deacon__contact {
+    padding: 0 40px;
+    margin-top: 40px;
+    height: 520px;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-header {
+        @include h2-heading;
+
+        width: 70%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &-info {
+        &-container {
+            display: flex;
+            width: 90%;
+            justify-content: center;
+        }
+
+        &-location {
+            padding: 20px;
+            width: 30%;
+            margin-right: 10px;
+
+            &-title {
+                @include contact-title($blueDark);
+            }
+
+            &-street,
+            &-locale {
+                @include body-small;
+                text-align: center;
+            }
+        }
+
+
+        &-general {
+            padding: 20px;
+            width: 30%;
+            margin-right: 10px;
+
+            &-title {
+                @include contact-title($goldenPear);
+            }
+        }
+
+        &-press {
+            padding: 20px;
+            width: 30%;
+
+            &-title {
+                @include contact-title($lavenderDark);
+            }
+        }
+
+        &-body {
+            @include body-small;
+            text-align: center;
+        }
+    }
+
+    &-button {
+        @include primary-button($black, $white, transparent, $black);
+    }
+}

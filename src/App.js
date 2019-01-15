@@ -4,6 +4,7 @@ import Splash from './components/Splash.js';
 import ContentModule from './components/ContentModule';
 import About from './components/About';
 import History from './components/History';
+import Contact from './components/Contact';
 import Dictionary from './dictionary';
 import 'normalize.css';
 import './styles/index.scss';
@@ -45,6 +46,7 @@ class App extends Component {
             image={Dictionary.history.image}
             imageDescriptor={Dictionary.history.imageDescriptor}
         />
+        <Contact />
       </div>
     );
   }
