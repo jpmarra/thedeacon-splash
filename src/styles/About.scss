@@ -9,7 +9,7 @@
     }
     &__images {
         display: flex;
-        margin: 60px 100px;
+        margin: 40px 100px 60px 100px;
 
         &-left {
             margin-right: 40px;
@@ -23,24 +23,46 @@
         flex-direction: row;
 
         &-description {
-            width: 55%;
+            width: 60%;
+
+            &-title {
+                @include h2-heading;
+            }
 
             &-body {
-                margin-right: 20px;
+                @include body-large;
+
+                padding-right: 30px;
+                margin-bottom: 40px;
             }
         }
 
         &-details {
-            width: 45%;
+            width: 40%;
+            height: 100%;
             display: flex;
             flex-direction: row;
-            padding-bottom:40px;
+            justify-content: center;
             border-left: 3px solid $goldenPear;
 
             &-container {
                 margin-left: 20px;
-                width: 50%;
+                width: 40%;
+
+                &-title {
+                    @include h4-heading;
+
+                    color: $goldenPear;
+                }
+
+                &-body {
+                    @include body-small;
+                }
             }
         }
+    }
+
+    &__button {
+        @include primary-button($black, $white, transparent, $black)
     }
 }

@@ -38,7 +38,7 @@ $blueDark: #58A293;
     font-family: 'Krana Fat A';
     font-size: 32px;
     letter-spacing: .5px;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 @mixin h4-heading {
@@ -64,9 +64,9 @@ $blueDark: #58A293;
 
 @mixin body-large {
     font-family: 'value-serif-bold';
-    font-size: 22px;
-    letter-spacing: .25px;
-    line-height: 48px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    line-height: 32px;
 }
 
 @mixin body-small {
