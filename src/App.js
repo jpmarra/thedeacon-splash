@@ -3,6 +3,7 @@ import SweetScroll from 'sweet-scroll';
 import Splash from './components/Splash.js';
 import ContentModule from './components/ContentModule';
 import About from './components/About';
+import History from './components/History';
 import Dictionary from './dictionary';
 import 'normalize.css';
 import './styles/index.scss';
@@ -38,6 +39,12 @@ class App extends Component {
             </div>
         </div>
         <About />
+        <History
+            title={Dictionary.history.title}
+            copy={Dictionary.history.copy}
+            image={Dictionary.history.image}
+            imageDescriptor={Dictionary.history.imageDescriptor}
+        />
       </div>
     );
   }

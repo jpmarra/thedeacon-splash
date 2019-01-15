@@ -1,6 +1,7 @@
 import Celebrate from './assets/images/Deacon-Intro-01_Celebrate.jpg';
 import Relax from './assets/images/Deacon-Intro-02_Relax.jpg';
 import Work from './assets/images/Deacon-Intro-03_Work.jpg'
+import History from './assets/images/Deacon-History.jpg'
 
 const dictionary = {
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
@@ -35,7 +36,13 @@ const dictionary = {
             imageDescriptor: 'Work',
             orientation: 'left'
         }
-    ]
+    ],
+    history: {
+        title: 'HISTORY',
+        copy: 'At the corner of 16th & Christian Street in Center City Philadelphia stands the First African Baptist Church. A building and congregation rich in history. We intend to carry this tradition on with The Deacon as a place to gather, entertain, stay, and collaborate.',
+        image: History,
+        imageDescriptor: 'History'
+    }
 }
 
 export default dictionary
