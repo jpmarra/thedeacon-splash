@@ -44,7 +44,7 @@ body {
     align-items: center;
 
     &__book-now {
-        @include round-button($terracottaDark, $black, $black, $stone, 110px);
+        @include round-button($terracottaDark, $black, $black, $stone);
         position: fixed;
         bottom: 20px;
         right: 20px;

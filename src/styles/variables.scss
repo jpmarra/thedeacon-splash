@@ -108,11 +108,11 @@ $blueDark: #58A293;
     }
 }
 
-@mixin round-button($background, $text, $hover-background, $hover-text, $size) {
+@mixin round-button($background, $text, $hover-background, $hover-text) {
     @include h5-heading;
 
-    height: $size;
-    width: $size;
+    height: 90px;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
