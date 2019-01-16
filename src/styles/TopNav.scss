@@ -12,6 +12,6 @@
     }
 
     &-book-now {
-        @include round-button($stone, $black, $black, $stone);
+        @include round-button($stone, $black, $black, $stone, 90px);
     }
 }

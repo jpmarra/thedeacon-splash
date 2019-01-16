@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopNav from './TopNav';
 import { ReactComponent as Logo } from '../assets/icons/Logo-Hor-Large.svg';
+import { ReactComponent as Arrow } from '../assets/icons/Arrow-Desktop_Default.svg';
 
 class Splash extends Component {
 
@@ -41,6 +42,9 @@ class Splash extends Component {
                 The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.
               </div>
               <button className="deacon-splash__button" onClick={() => this.props.handleScroll('#about')}>LEARN MORE</button>
+              <Arrow
+                className='deacon-splash__arrow animated infinite bounce'
+                onClick={() => this.props.handleScroll(window.innerHeight)}/>
           </div>
       </div>
     );

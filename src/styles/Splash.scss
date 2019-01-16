@@ -18,6 +18,13 @@
         left: 40px;
     }
 
+    &__arrow {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        cursor: pointer;
+    }
+
     &__content-container {
         width: 90%;
         display: flex;

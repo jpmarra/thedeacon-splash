@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SweetScroll from 'sweet-scroll';
+import BookNow from './components/BookNow';
 import Splash from './components/Splash.js';
 import ContentModule from './components/ContentModule';
 import About from './components/About';
@@ -47,6 +48,7 @@ class App extends Component {
             imageDescriptor={Dictionary.history.imageDescriptor}
         />
         <Contact />
+        <BookNow />
       </div>
     );
   }
