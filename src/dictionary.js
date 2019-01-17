@@ -2,6 +2,7 @@ import Celebrate from './assets/images/Deacon-Intro-01_Celebrate.jpg';
 import Relax from './assets/images/Deacon-Intro-02_Relax.jpg';
 import Work from './assets/images/Deacon-Intro-03_Work.jpg'
 import History from './assets/images/Deacon-History.jpg'
+import Map from './assets/images/Map-Desktop.jpg'
 
 const dictionary = {
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
@@ -42,6 +43,38 @@ const dictionary = {
         copy: 'At the corner of 16th & Christian Street in Center City Philadelphia stands the First African Baptist Church. A building and congregation rich in history. We intend to carry this tradition on with The Deacon as a place to gather, entertain, stay, and collaborate.',
         image: History,
         imageDescriptor: 'History'
+    },
+    map: {
+        image: Map,
+        title: 'THE NEIGHBORHOOD',
+        imageDescriptor: 'Map',
+        foodTitle: 'FOOD & DRINK',
+        foodOptions: [
+            '1. Pumpkin',
+            '2. Miles Table',
+            '2. Bob and Barbara’s',
+            '3. Ultimo Coffee',
+            '4. The Side Car Bar & Grille',
+            '5. OCF Coffee',
+            '6. Boot & Saddle',
+            '7. Sprouts Farmers Market',
+            '8. Italian Market'
+        ],
+        parksTitle: 'PARKS & LANDMARKS',
+        parkOptions: [
+            '9. Marian Anderson Park',
+            '10. Rittenhouse',
+            '11. City Hall',
+            '12. Magic Gardens',
+            '13. Love Park'
+        ],
+        transportTitle: 'TRANSPORTATION',
+        transportOptions: [
+            '14. South & Lombard Subway',
+            '15. Ellsworth-Federal Subway',
+            '16. Amtrak 30th St. Station',
+            '17. Walnut-Locust Subway'
+        ]
     },
     contact: {
         header: 'We look forward to helping you set the perfect environment for your visit. Let’s get in touch.',

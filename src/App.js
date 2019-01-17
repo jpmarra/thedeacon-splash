@@ -5,6 +5,7 @@ import Splash from './components/Splash.js';
 import ContentModule from './components/ContentModule';
 import About from './components/About';
 import History from './components/History';
+import Map from './components/Map';
 import Contact from './components/Contact';
 import Dictionary from './dictionary';
 import 'normalize.css';
@@ -60,6 +61,7 @@ class App extends Component {
             image={Dictionary.history.image}
             imageDescriptor={Dictionary.history.imageDescriptor}
         />
+        <Map />
         <Contact />
         <BookNow fadeInOpacity={this.fadeInOpacity.bind(this)} />
       </div>
