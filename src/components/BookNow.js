@@ -18,15 +18,8 @@ class BookNow extends Component {
     }
 
     handleScroll() {
-        const opacity = this.setOpacity(200, 130)
+        const opacity = this.props.fadeInOpacity(200, 130)
         this.setState({ opacity });
-    }
-
-    setOpacity(range, start) {
-        const currentY = Math.round(Math.abs(window.scrollY));
-        const end = start + range;
-
-        return currentY < end ? (currentY - start) / (end - start) : 1
     }
 
     render() {

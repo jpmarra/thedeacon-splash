@@ -61,7 +61,7 @@ class App extends Component {
             imageDescriptor={Dictionary.history.imageDescriptor}
         />
         <Contact />
-        <BookNow />
+        <BookNow fadeInOpacity={this.fadeInOpacity.bind(this)} />
       </div>
     );
   }
