@@ -39,9 +39,6 @@ body {
 }
 
 .deacon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     &__book-now {
         @include round-button($terracottaDark, $black, $black, $stone);

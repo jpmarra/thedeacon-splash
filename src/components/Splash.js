@@ -11,16 +11,26 @@ class Splash extends Component {
         this.state = {
             currentWordIdx: 0,
             currentWord: 'GATHER',
-            words: ['LAUGH', 'CELEBRATE', 'CREATE', 'COLLABORATE', 'RELAX', 'ENJOY']
+            words: ['LAUGH', 'CELEBRATE', 'CREATE', 'COLLABORATE', 'RELAX', 'ENJOY'],
+            arrowOpacity: 1
         }
+
+        this.handleArrow = this.handleArrow.bind(this);
     }
 
     componentDidMount() {
+        document.addEventListener('scroll', this.handleArrow);
         this.wordInterval = setInterval(() => this.changeWord(), 500);
     }
 
     componentWillUnmount() {
         clearInterval(this.wordInterval);
+    }
+
+    handleArrow() {
+        const arrowOpacity = this.props.fadeOutOpacity(300);
+        // console.log('OPACITY: ', opacity)
+        this.setState({ arrowOpacity });
     }
 
     changeWord() {
@@ -29,10 +39,14 @@ class Splash extends Component {
         this.setState({ currentWord: this.state.words[newIdx] });
     }
   render() {
+      const arrowStyle = {
+          opacity: this.state.arrowOpacity
+      };
+
     return (
       <div className="deacon-splash">
         <Logo className='deacon-splash__logo'/>
-        <TopNav handleScroll={this.props.handleScroll} />
+        <TopNav handleScroll={this.props.handleScroll} fadeOutOpacity={this.props.fadeOutOpacity}/>
           <div className="deacon-splash__container">
               <header className="deacon-splash__hero">
                   <span className="deacon-splash__hero-text">A PLACE TO </span>
@@ -44,6 +58,7 @@ class Splash extends Component {
               <button className="deacon-splash__button" onClick={() => this.props.handleScroll('#about')}>LEARN MORE</button>
               <Arrow
                 className='deacon-splash__arrow animated infinite bounce'
+                style={arrowStyle}
                 onClick={() => this.props.handleScroll(window.innerHeight)}/>
           </div>
       </div>

@@ -7,7 +7,7 @@ class BookNow extends Component {
         super();
 
         this.state = {
-            visible: false
+            opacity: 0
         }
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -18,17 +18,24 @@ class BookNow extends Component {
     }
 
     handleScroll() {
-        console.log('Scroll Y: ', window.scrollY, ' InnerHeight: ', window.innerHeight);
-        if (window.scrollY > 130) {
-            this.setState({ visible: true });
-        } else if (window.scrollY < 130 && this.state.visible) {
-            this.setState({ visible: false });
-        }
+        const opacity = this.setOpacity(200, 130)
+        this.setState({ opacity });
+    }
+
+    setOpacity(range, start) {
+        const currentY = Math.round(Math.abs(window.scrollY));
+        const end = start + range;
+
+        return currentY < end ? (currentY - start) / (end - start) : 1
     }
 
     render() {
+        const bookNowStyle = {
+            opacity: this.state.opacity
+        };
+
         return (
-            <div id='book-now' className={classNames('deacon__book-now animated fadeIn', { hide: !this.state.visible })}>
+            <div id='book-now' style={bookNowStyle} className='deacon__book-now'>
             <a
                 className='deacon__book-now'
                 href='https://www.google.com'

@@ -20,10 +20,23 @@ class App extends Component {
       this.sweetScroll.to(element);
   }
 
+  fadeInOpacity(range, start) {
+      const currentY = Math.round(Math.abs(window.scrollY));
+      const end = start + range;
+
+      return currentY < end ? (currentY - start) / (end - start) : 1
+  }
+
+  fadeOutOpacity(range) {
+      const currentY = Math.round(Math.abs(window.scrollY));
+
+      return currentY < range ? (range - currentY) / range : 0;
+  }
+
   render() {
     return (
       <div className="deacon">
-        <Splash handleScroll={this.handleScroll.bind(this)}/>
+        <Splash handleScroll={this.handleScroll.bind(this)} fadeOutOpacity={this.fadeOutOpacity.bind(this)} />
         <div className='deacon-splash__content-container'>
             {Dictionary.contentModules.map((content, idx) => (
                 <ContentModule
