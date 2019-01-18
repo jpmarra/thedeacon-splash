@@ -36,7 +36,26 @@ const Contact = () => (
                     </div>
                 </div>
             </div>
-            <button className='deacon__contact-button'>LEARN MORE</button>
+            <button className='deacon__contact-button'>GET IN TOUCH</button>
+            <div className='deacon__contact-newsletter-container'>
+                <div className='deacon__contact-newsletter-text'>
+                    <div className='deacon__contact-newsletter-text-title'>
+                        {Dictionary.contact.newsletterTitle}
+                    </div>
+                    <div className='deacon__contact-newsletter-text-copy'>
+                        {Dictionary.contact.newsletterCopy}
+                    </div>
+                </div>
+                <form action='' className='deacon__contact-newsletter-form'>
+                    <input type='email'
+                        className='deacon__contact-newsletter-form-input'
+                        placeholder='Email Address'
+                    />
+                    <button className='deacon__contact-newsletter-form-button'>
+                        SIGN UP
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 );

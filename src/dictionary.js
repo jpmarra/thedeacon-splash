@@ -85,7 +85,9 @@ const dictionary = {
         generalTitle: 'GENERAL INQUIRIES',
         generalBody: 'hello@thedeaconphl.com',
         pressTitle: 'PRESS & PARTNERSHIPS',
-        pressBody: 'press@thedeaconphl.com'
+        pressBody: 'press@thedeaconphl.com',
+        newsletterTitle: 'Stay up to date',
+        newsletterCopy: 'Sign up to receive news and updates from The Deacon'
     }
 }
 

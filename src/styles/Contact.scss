@@ -68,5 +68,53 @@
 
     &-button {
         @include primary-button($black, $white, transparent, $black);
+        width: 210px;
+    }
+
+    &-newsletter {
+        &-container {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 80px 0;
+            background-color: $stone;
+        }
+
+        &-text {
+            margin-left: 40px;
+
+            &-title {
+                @include h2-heading;
+            }
+
+            &-copy {
+                @include body-small;
+            }
+        }
+
+        &-form {
+            margin-right: 40px;
+            display: flex;
+
+            &-input {
+                @include body-small
+                width: 350px;
+                margin-right: 20px;
+                background: none;
+                border: none;
+                border-bottom: 2px solid $black;
+
+                &::placeholder {
+                    color: $black;
+                }
+            }
+
+            &-button {
+                @include primary-button($black, $white, transparent, $terracottaDark)
+            }
+        }
     }
 }
