@@ -39,7 +39,7 @@ const Contact = () => (
                     </div>
                 </div>
             </div>
-            <button className='deacon__contact-button'>GET IN TOUCH</button>
+            <a className='deacon__contact-button' href={`mailto:${Dictionary.generalEmail}?subject=Hotel Inquiry`}><p>GET IN TOUCH</p></a>
             <div className='deacon__contact-newsletter-container'>
                 <div className='deacon__contact-newsletter-text'>
                     <div className='deacon__contact-newsletter-text-title'>

@@ -18,7 +18,7 @@ const About = () => (
                     <div className='deacon-about__copy-description-body'>
                         {Dictionary.about}
                     </div>
-                    <button className="deacon-about__button" onClick={() => this.props.handleScroll('#about')}>LEARN MORE</button>
+                    <a className="deacon-about__button" href={`mailto:${Dictionary.generalEmail}?subject=Hotel Inquiry`}><p>LEARN MORE</p></a>
                 </div>
                 <div className='deacon-about__copy-details'>
                     <div className='deacon-about__copy-details-container'>

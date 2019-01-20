@@ -29,11 +29,11 @@ const Footer = () => (
                         {Dictionary.footer.contactTitle}
                     </div>
                     <div className='deacon__footer-info-module-links'>
-                        <a href={`mailto:${Dictionary.generalEmail}`} className='deacon__footer-info-module-link'>
+                        <a href={`mailto:${Dictionary.generalEmail}?subject=Hotel Inquiry`} className='deacon__footer-info-module-link'>
                             {Dictionary.footer.contactGeneral}
                         </a>
                         <span className='deacon__footer-info-module-bullet' />
-                        <a href={`mailto:${Dictionary.pressEmail}`} className='deacon__footer-info-module-link'>
+                        <a href={`mailto:${Dictionary.pressEmail}?subject=Press Inquiry`} className='deacon__footer-info-module-link'>
                             {Dictionary.contact.pressTitle}
                         </a>
                     </div>

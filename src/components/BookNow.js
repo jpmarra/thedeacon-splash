@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import Dictionary from '../dictionary'
 
 class BookNow extends Component {
 
@@ -36,7 +37,7 @@ class BookNow extends Component {
             <div id='book-now' style={bookNowStyle} className={classNames('deacon__book-now', { hide: !this.state.visible })}>
             <a
                 className='deacon__book-now'
-                href='https://www.google.com'
+                href={`mailto:${Dictionary.generalEmail}?subject=Booking Request`}
                 target="_blank"
                 rel='noopener noreferrer'
             >

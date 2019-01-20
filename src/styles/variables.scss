@@ -101,6 +101,7 @@ $blueDark: #58A293;
     color: $text;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    border: 1.5px solid transparent;
 
     &:hover {
         background-color: $hover-background;

@@ -1,4 +1,6 @@
 import React from 'react';
+import Dictionary from '../dictionary';
+
 const TopNav = ({ handleScroll }) => (
     <div className='deacon__top-nav'>
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#about')}>ABOUT</button>
@@ -6,7 +8,7 @@ const TopNav = ({ handleScroll }) => (
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#contact')}>CONTACT</button>
         <a
             className='deacon__top-nav-book-now'
-            href='https://www.google.com'
+            href={`mailto:${Dictionary.generalEmail}?subject=Booking Request`}
             target="_blank"
             rel='noopener noreferrer'
         >
