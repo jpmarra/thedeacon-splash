@@ -63,6 +63,6 @@
     }
 
     &__button {
-        @include primary-button($black, $white, transparent, $black)
+        @include primary-button($black, $white, transparent, $terracottaDark)
     }
 }

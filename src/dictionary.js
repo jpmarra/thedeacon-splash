@@ -3,8 +3,11 @@ import Relax from './assets/images/Deacon-Intro-02_Relax.jpg';
 import Work from './assets/images/Deacon-Intro-03_Work.jpg'
 import History from './assets/images/Deacon-History.jpg'
 import Map from './assets/images/Map-Desktop.jpg'
+import Footer from './assets/images/Deacon-Footer.jpg'
 
 const dictionary = {
+    generalEmail: 'hello@thedeaconphl.com',
+    pressEmail: 'press@thedeaconphl.com',
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
     learnMore: 'Learn More',
     splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave this place.',
@@ -88,6 +91,14 @@ const dictionary = {
         pressBody: 'press@thedeaconphl.com',
         newsletterTitle: 'Stay up to date',
         newsletterCopy: 'Sign up to receive news and updates from The Deacon'
+    },
+    footer: {
+        image: Footer,
+        title: 'A place to gather. Coming early spring 2019.',
+        contactTitle: 'CONTACT & BOOKING',
+        contactGeneral: 'GENERAL INQUIRES',
+        socialTitle: 'CONNECT WITH US',
+        copyright: '2018 The Deacon'
     }
 }
 

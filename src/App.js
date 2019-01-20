@@ -7,6 +7,7 @@ import About from './components/About';
 import History from './components/History';
 import Map from './components/Map';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Dictionary from './dictionary';
 import 'normalize.css';
 import './styles/index.scss';
@@ -63,6 +64,7 @@ class App extends Component {
         />
         <Map />
         <Contact />
+        <Footer />
         <BookNow fadeInOpacity={this.fadeInOpacity.bind(this)} />
       </div>
     );
