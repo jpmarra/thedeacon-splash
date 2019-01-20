@@ -1,5 +1,8 @@
 import React from 'react';
 import Dictionary from '../dictionary';
+import MailchimpForm from './MailchimpForm';
+import MailchimpUnsubscribe from 'react-mailchimp-subscribe';
+const url = 'https://thedeaconphl.us20.list-manage.com/subscribe/post?u=80a58941eed4bc193dbb23b3d&amp;id=2520920791';
 
 const Contact = () => (
     <div id='contact' className='deacon__contact'>
@@ -46,15 +49,12 @@ const Contact = () => (
                         {Dictionary.contact.newsletterCopy}
                     </div>
                 </div>
-                <form action='' className='deacon__contact-newsletter-form'>
-                    <input type='email'
-                        className='deacon__contact-newsletter-form-input'
-                        placeholder='Email Address'
-                    />
-                    <button className='deacon__contact-newsletter-form-button'>
-                        SIGN UP
-                    </button>
-                </form>
+                <MailchimpUnsubscribe
+                    url={url}
+                    render={({ subscribe, status, messaage }) => (
+                        <MailchimpForm onValidated={formData => subscribe(formData)}/>
+                    )}
+                />
             </div>
         </div>
     </div>
