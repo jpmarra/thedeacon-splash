@@ -8,7 +8,7 @@ const About = () => (
         <div className='deacon-about__container'>
             <div className='deacon-about__images'>
                 <img className='deacon-about__images-left'src={About1} alt='furniture plans' />
-                <img src={About2} alt='blueprints' />
+                <img className='deacon-about__images-right' src={About2} alt='blueprints' />
             </div>
             <div className='deacon-about__copy'>
                 <div className='deacon-about__copy-description'>

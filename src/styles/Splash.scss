@@ -10,12 +10,22 @@
         height: inherit;
         margin-top: 116px;
         margin-left: 80px;
+
+        @include for-phone-only {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     &__logo {
         position: absolute;
         top: 40px;
         left: 40px;
+
+        @include for-phone-only {
+            top: 40px;
+            left: 20px;
+        }
     }
 
     &__arrow {
@@ -34,9 +44,11 @@
 
     &__hero {
         @include primary-header;
-
         margin-bottom: 20px;
 
+        @include for-phone-only {
+            font-size: 65px;
+        }
         &-animated {
             color: $white;
             border-bottom: 6px solid $black;
@@ -45,9 +57,12 @@
 
     &__intro {
         @include body-large;
-
-        width: 515px;
+        width: 45%;
         margin-bottom: 20px;
+
+        @include for-phone-only {
+            width: 100%;
+        }
     }
 
     &__button {
@@ -56,13 +71,16 @@
 
     &__outro {
         @include h2-heading;
-
         margin: 40px 0 100px 0;
         width: 80%;
         text-align: center;
 
         &-opening {
             border-bottom: 6px solid $goldenPear;
+        }
+
+        @include for-phone-only {
+            display: none;
         }
     }
 }

@@ -11,8 +11,25 @@
         display: flex;
         margin: 40px 100px 60px 100px;
 
+        @include for-phone-only {
+            margin: 0;
+        }
+
         &-left {
             margin-right: 40px;
+
+            @include for-phone-only {
+                display: flex;
+                align-self: center;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        &-right {
+            @include for-phone-only {
+                display: none;
+            }
         }
     }
 
@@ -22,8 +39,18 @@
         display: flex;
         flex-direction: row;
 
+        @include for-phone-only {
+            width: inherit;
+            flex-direction: column;
+            margin: 40px 20px 0 20px;
+        }
+
         &-description {
             width: 60%;
+
+            @include for-phone-only {
+                width: 100%;
+            }
 
             &-title {
                 @include h2-heading;
@@ -31,9 +58,14 @@
 
             &-body {
                 @include body-large;
-
                 padding-right: 30px;
                 margin-bottom: 40px;
+
+                @include for-phone-only {
+                    @include body-small;
+
+                    padding-right: 0;
+                }
             }
         }
 
@@ -45,14 +77,30 @@
             justify-content: center;
             border-left: 3px solid $goldenPear;
 
+            @include for-phone-only {
+                width: 100%;
+                border-left: none;
+                flex-direction: column;
+                margin-top: 40px;
+            }
+
             &-container {
                 margin-left: 20px;
                 width: 40%;
 
+                @include for-phone-only {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 40px;
+                }
+
                 &-title {
                     @include h4-heading;
-
                     color: $goldenPear;
+
+                    @include for-phone-only {
+                        @include h3-heading;
+                    }
                 }
 
                 &-body {
@@ -68,5 +116,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include for-phone-only {
+            width: 100%;
+        }
     }
 }

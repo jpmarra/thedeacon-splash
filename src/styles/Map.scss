@@ -2,6 +2,11 @@
     height: 120vh;
     display: flex;
     background-color: $stone;
+
+    @include for-phone-only {
+        display: none;
+    }
+
     &-image {
         height: 100%;
     }

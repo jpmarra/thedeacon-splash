@@ -4,6 +4,10 @@
     height: 520px;
     max-width: 1490px;
 
+    @include for-phone-only {
+        display: none;
+    }
+
     &-container {
         display: flex;
         flex-direction: row;

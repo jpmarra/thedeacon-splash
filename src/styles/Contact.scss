@@ -3,6 +3,11 @@
     margin-top: 40px;
     height: 520px;
 
+    @include for-phone-only {
+        padding: 0 20px;
+        height: auto;
+    }
+
     &-container {
         display: flex;
         flex-direction: column;
@@ -11,10 +16,16 @@
 
     &-header {
         @include h2-heading;
-
         width: 70%;
         margin-bottom: 20px;
         text-align: center;
+
+        @include for-phone-only {
+            @include h3-heading;
+            font-size: 35px;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &-info {
@@ -22,12 +33,25 @@
             display: flex;
             width: 90%;
             justify-content: center;
+
+            @include for-phone-only {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
         }
 
         &-location {
             padding: 20px;
             width: 30%;
             margin-right: 10px;
+
+            @include for-phone-only {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 40px;
+                padding: 0;
+            }
 
             &-title {
                 @include contact-title($blueDark);
@@ -46,6 +70,13 @@
             width: 30%;
             margin-right: 10px;
 
+            @include for-phone-only {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 40px;
+                padding: 0;
+            }
+
             &-title {
                 @include contact-title($goldenPear);
             }
@@ -54,6 +85,13 @@
         &-press {
             padding: 20px;
             width: 30%;
+
+            @include for-phone-only {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 40px;
+                padding: 0;
+            }
 
             &-title {
                 @include contact-title($lavenderDark);
@@ -73,6 +111,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include for-phone-only {
+            width: 100%;
+        }
     }
 
     &-newsletter {
@@ -85,10 +127,22 @@
             align-items: center;
             margin: 80px 0;
             background-color: $stone;
+
+            @include for-phone-only {
+                width: 100vw;
+                height: auto;
+                flex-direction: column;
+                align-items: baseline;
+                justify-content: flex-start;
+                margin-bottom: 0;
+            }
         }
 
         &-text {
             margin-left: 40px;
+            @include for-phone-only {
+                margin: 20px;
+            }
 
             &-title {
                 @include h2-heading;
@@ -103,6 +157,13 @@
             margin-right: 40px;
             display: flex;
 
+            @include for-phone-only {
+                width: 95%;
+                margin: 0;
+                padding: 20px;
+                flex-direction: column;
+            }
+
             &-input {
                 @include body-small
                 width: 350px;
@@ -114,10 +175,19 @@
                 &::placeholder {
                     color: $black;
                 }
+
+                @include for-phone-only {
+                    width: 90%;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
             }
 
             &-button {
                 @include primary-button($black, $white, transparent, $terracottaDark)
+                @include for-phone-only {
+                    width: 90%;
+                }
             }
         }
     }
