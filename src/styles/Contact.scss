@@ -132,8 +132,8 @@
                 width: 100vw;
                 height: auto;
                 flex-direction: column;
-                align-items: baseline;
-                justify-content: flex-start;
+                align-items: center;
+                justify-content: center;
                 margin-bottom: 0;
             }
         }
@@ -158,9 +158,8 @@
             display: flex;
 
             @include for-phone-only {
-                width: 95%;
-                margin: 0;
-                padding: 20px;
+                width: 90%;
+                margin: 20px 0;
                 flex-direction: column;
             }
 
@@ -177,7 +176,7 @@
                 }
 
                 @include for-phone-only {
-                    width: 90%;
+                    width: 100%;
                     margin-right: 0;
                     margin-bottom: 20px;
                 }
@@ -186,7 +185,7 @@
             &-button {
                 @include primary-button($black, $white, transparent, $terracottaDark)
                 @include for-phone-only {
-                    width: 90%;
+                    width: 100%;
                 }
             }
         }
