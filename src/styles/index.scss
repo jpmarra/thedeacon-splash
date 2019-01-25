@@ -41,6 +41,10 @@ body {
 }
 
 .deacon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &__book-now {
         @include round-button($terracottaDark, $black, $black, $stone);
@@ -48,6 +52,7 @@ body {
         bottom: 20px;
         right: 20px;
         animation-duration: .5s;
+        z-index: 1;
     }
 }
 

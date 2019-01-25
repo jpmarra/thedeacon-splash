@@ -2,6 +2,13 @@
     min-height: 100vh;
     min-width: 100%;
     background-color: $stone;
+    background-image: url('../assets/icons/Deacon-Logo-Vertical_M.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include for-phone-only {
+        background-image: none;
+    }
     &__container {
         display: flex;
         flex-direction: column;
@@ -42,7 +49,11 @@
         @include for-phone-only {
             width: inherit;
             flex-direction: column;
-            margin: 40px 20px 0 20px;
+            margin: 0;
+            padding: 0 20px;
+            background-image: url('../assets/icons/Deacon-Logo-Vertical_M.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         &-description {
@@ -54,6 +65,10 @@
 
             &-title {
                 @include h2-heading;
+
+                @include for-phone-only {
+                    margin-top: 40px;
+                }
             }
 
             &-body {
