@@ -4,7 +4,11 @@
     height: 520px;
     max-width: 1490px;
 
-    @include for-phone-only {
+    @include for-medium {
+        margin-bottom: 0;
+    }
+
+    @include for-mobile {
         display: none;
     }
 

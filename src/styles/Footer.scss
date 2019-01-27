@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include for-phone-only {
+    @include for-mobile {
         margin-top: 0;
     }
 
@@ -17,7 +17,7 @@
         height: 537px;
         background-color: $black;
 
-        @include for-phone-only {
+        @include for-mobile {
             height: auto;
         }
     }
@@ -25,7 +25,7 @@
     &-logo {
         margin-top: 100px;
 
-        @include for-phone-only {
+        @include for-mobile {
             margin-top: 40px;
             height: 60px;
         }
@@ -36,7 +36,7 @@
         margin: 30px 0;
         color: $white;
 
-        @include for-phone-only {
+        @include for-mobile {
             @include h4-heading;
             text-align: center;
         }
@@ -53,7 +53,10 @@
             margin-bottom: -60px;
             z-index: 1;
 
-            @include for-phone-only {
+            @include for-medium {
+                margin-top: 40px;
+            }
+            @include for-mobile {
                 display: none;
             }
         }
@@ -65,9 +68,12 @@
             width: 85%;
             justify-content: center;
 
-            @include for-phone-only {
-                flex-direction: column;
+            @include for-medium {
                 width: 100%;
+            }
+
+            @include for-mobile {
+                flex-direction: column;
             }
         }
 
@@ -79,7 +85,11 @@
             color: $white;
             text-align: center;
 
-            @include for-phone-only {
+            @include for-medium {
+                width: 33.3%;
+            }
+
+            @include for-mobile {
                 width: 100%;
                 margin: 0;
                 margin-bottom: 40px;
@@ -107,6 +117,14 @@
 
                 &:hover {
                     color: $goldenPear;
+                }
+
+                @include for-medium {
+                    @include h6-heading;
+                }
+
+                @include for-mobile {
+                    @include h5-heading;
                 }
             }
 
@@ -143,7 +161,7 @@
         font-size: 12px;
         color: $white;
 
-        @include for-phone-only {
+        @include for-mobile {
             margin-top: 20px;
         }
     }

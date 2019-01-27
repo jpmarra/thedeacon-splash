@@ -15,16 +15,12 @@
         &:hover {
             color: $white;
         }
-
-        @include for-phone-only {
-            display: none;
-        }
     }
 
     &-book-now {
         @include round-button($stone, $black, $black, $stone);
 
-        @include for-phone-only {
+        @include for-mobile {
             display: none;
         }
     }
