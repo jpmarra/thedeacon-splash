@@ -5,7 +5,11 @@ import { ReactComponent as Logo } from '../assets/icons/Deacon-Footer_Logo-Large
 const Footer = () => (
     <div className='deacon__footer'>
         <div className='deacon__footer-image-container'>
-            <img  className='deacon__footer-image' src={Dictionary.footer.image} />
+            <img
+                className='deacon__footer-image'
+                alt='footer'
+                src={Dictionary.footer.image}
+            />
         </div>
         <div className='deacon__footer-container'>
             <Logo className='deacon__footer-logo'/>
@@ -29,11 +33,17 @@ const Footer = () => (
                         {Dictionary.footer.contactTitle}
                     </div>
                     <div className='deacon__footer-info-module-links'>
-                        <a href={`mailto:${Dictionary.generalEmail}?subject=Hotel Inquiry`} className='deacon__footer-info-module-link'>
+                        <a
+                            href={`mailto:${Dictionary.generalEmail}?subject=Hotel Inquiry`}
+                            className='deacon__footer-info-module-link'
+                        >
                             {Dictionary.footer.contactGeneral}
                         </a>
                         <span className='deacon__footer-info-module-bullet' />
-                        <a href={`mailto:${Dictionary.pressEmail}?subject=Press Inquiry`} className='deacon__footer-info-module-link'>
+                        <a
+                            href={`mailto:${Dictionary.pressEmail}?subject=Press Inquiry`}
+                            className='deacon__footer-info-module-link'
+                        >
                             {Dictionary.contact.pressTitle}
                         </a>
                     </div>

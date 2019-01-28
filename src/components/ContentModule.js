@@ -19,7 +19,8 @@ const ContentModule = ({ title, copy, image, imageDescriptor, orientation }) => 
                         alt={imageDescriptor}
                     />
                 </div>
-            ) :
+            )
+        :
             (
                 <div className={`deacon-content-module__container ${title.split(' ')[0]}`}>
                     <img

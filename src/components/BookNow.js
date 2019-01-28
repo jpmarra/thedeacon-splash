@@ -34,7 +34,11 @@ class BookNow extends Component {
         };
 
         return (
-            <div id='book-now' style={bookNowStyle} className={classNames('deacon__book-now', { hide: !this.state.visible })}>
+            <div
+                id='book-now'
+                style={bookNowStyle}
+                className={classNames('deacon__book-now', { hide: !this.state.visible })}
+            >
             <a
                 className='deacon__book-now'
                 href={`mailto:${Dictionary.generalEmail}?subject=Booking Request`}
