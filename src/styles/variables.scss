@@ -153,3 +153,7 @@ $blueDark: #58A293;
 @mixin for-medium {
   @media (max-width: 1199px) { @content; }
 }
+
+@mixin for-large {
+    @media (max-width: 1300) { @content; }
+}
