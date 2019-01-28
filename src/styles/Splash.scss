@@ -22,7 +22,7 @@
         left: 40px;
 
         @include for-mobile {
-            top: 40px;
+            top: 20px;
             left: 20px;
         }
     }
@@ -50,7 +50,7 @@
         margin-bottom: 20px;
 
         @include for-mobile {
-            font-size: 65px;
+            font-size: 63px;
         }
         &-animated {
             color: $white;
@@ -70,6 +70,7 @@
 
         @include for-mobile {
             width: 100%;
+            @include body-small;
         }
     }
 
