@@ -1,6 +1,6 @@
 .deacon-about {
     min-height: 100vh;
-    min-width: 100%;
+    width: 100%;
     background-color: $stone;
     background-image: url('../assets/icons/Deacon-Logo-Vertical_M.svg');
     background-size: contain;
@@ -32,6 +32,7 @@
 
         &-left {
             margin-right: 40px;
+            width: 50%;
 
             @include for-medium {
                 width: 40%;
@@ -47,6 +48,7 @@
         }
 
         &-right {
+            width: 50%;
 
             @include for-medium {
                 width: 40%;
@@ -60,7 +62,7 @@
     }
 
     &__copy {
-        width: 1239px;
+        width: 90%;
         margin: 0 100px 40px 100px;
         display: flex;
         flex-direction: row;

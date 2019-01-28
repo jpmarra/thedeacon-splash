@@ -1,5 +1,4 @@
 .deacon__map {
-    height: 120vh;
     width: 100%;
     display: flex;
     background-color: $stone;
@@ -9,7 +8,8 @@
     }
 
     &-image {
-        height: 100%;
+        width: 75%;
+        max-height: 120vh;
     }
 
     &-copy {
