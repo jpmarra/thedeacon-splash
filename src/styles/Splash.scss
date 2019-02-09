@@ -54,7 +54,8 @@
         }
         &-animated {
             color: $white;
-            border-bottom: 6px solid $black;
+            text-decoration: underline;
+            text-decoration-color: $black;
 
             @include for-medium {
                 display: block;
@@ -65,7 +66,7 @@
 
     &__intro {
         @include body-large;
-        width: 45%;
+        width: 35%;
         margin-bottom: 20px;
 
         @include for-mobile {
@@ -75,7 +76,7 @@
     }
 
     &__button {
-        @include primary-button($stone, $black, transparent, $stone);
+        @include primary-button($stone, $black, transparent, $stone, $stone);
 
         @include for-mobile {
             width: 100%;

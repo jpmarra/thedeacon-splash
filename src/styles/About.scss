@@ -17,7 +17,8 @@
     }
     &__images {
         display: flex;
-        margin: 40px 100px 60px 100px;
+        margin: 40px 60px 60px 60px;
+        width: 90%;
 
         @include for-medium {
             width: 100%;
@@ -102,6 +103,9 @@
                 @include h2-heading;
 
                 @include for-mobile {
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-start;
                     margin-top: 40px;
                 }
             }
@@ -129,7 +133,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            border-left: 3px solid $goldenPear;
+            border-left: 2px solid $goldenPear;
 
             @include for-medium {
                 width: 40%;
@@ -173,7 +177,7 @@
     }
 
     &__button {
-        @include primary-button($black, $white, transparent, $terracottaDark)
+        @include primary-button($black, $white, $terracottaDark, $white, $terracottaDark)
         text-decoration: none;
         display: flex;
         justify-content: center;

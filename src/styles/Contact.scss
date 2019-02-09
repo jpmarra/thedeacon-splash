@@ -1,5 +1,4 @@
 .deacon__contact {
-    height: 520px;
     width: 100%;
     margin-top: 40px;
 
@@ -17,11 +16,13 @@
     &-header {
         @include h2-heading;
         width: 70%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         text-align: center;
 
         @include for-mobile {
             @include h3-heading;
+            margin-top: 20px;
+            margin-bottom: 60px;
             font-size: 35px;
             width: 100%;
             text-align: center;
@@ -31,12 +32,14 @@
     &-info {
         &-container {
             display: flex;
+            height: 150px;
             width: 90%;
             justify-content: center;
 
             @include for-mobile {
                 flex-direction: column;
                 width: 100%;
+                height: inherit;
                 align-items: center;
             }
         }
@@ -45,12 +48,16 @@
             padding: 20px;
             width: 30%;
             margin-right: 10px;
+            background-image: url('../assets/arches/Arch-mobile-location.svg');
+            background-position: center;
+            background-repeat: no-repeat;
 
             @include for-mobile {
                 width: 100%;
                 margin: 0;
                 margin-bottom: 40px;
                 padding: 0;
+                background: none;
             }
 
             &-title {
@@ -69,12 +76,16 @@
             padding: 20px;
             width: 30%;
             margin-right: 10px;
+            background-image: url('../assets/arches/Arch-mobile-general.svg');
+            background-position: center;
+            background-repeat: no-repeat;
 
             @include for-mobile {
                 width: 100%;
                 margin: 0;
                 margin-bottom: 40px;
                 padding: 0;
+                background: none;
             }
 
             &-title {
@@ -85,12 +96,16 @@
         &-press {
             padding: 20px;
             width: 30%;
+            background-image: url('../assets/arches/Arch-mobile-press.svg');
+            background-position: center;
+            background-repeat: no-repeat;
 
             @include for-mobile {
                 width: 100%;
                 margin: 0;
                 margin-bottom: 40px;
                 padding: 0;
+                background: none;
             }
 
             &-title {
@@ -105,7 +120,7 @@
     }
 
     &-button {
-        @include primary-button($black, $white, transparent, $black);
+        @include primary-button($black, $white, $terracottaDark, $white, $terracottaDark);
         width: 210px;
         text-decoration: none;
         display: flex;
@@ -125,7 +140,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin: 80px 0;
+            margin-top: 80px;
             background-color: $stone;
 
             @include for-mobile {
@@ -184,7 +199,8 @@
             }
 
             &-button {
-                @include primary-button($black, $white, transparent, $terracottaDark)
+                @include primary-button($black, $white, $terracottaDark, $white, $terracottaDark);
+
                 @include for-mobile {
                     width: 100%;
                 }

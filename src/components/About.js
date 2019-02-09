@@ -13,14 +13,14 @@ const About = () => (
             <div className='deacon-about__copy'>
                 <div className='deacon-about__copy-description'>
                     <div className='deacon-about__copy-description-title'>
-                        {Dictionary.aboutTitle}
+                        <span>{Dictionary.aboutTitle}</span>
                     </div>
                     <div className='deacon-about__copy-description-body'>
                         {Dictionary.about}
                     </div>
                     <a
                         className="deacon-about__button"
-                        href={`mailto:${Dictionary.generalEmail}?subject=Hotel Inquiry`}
+                        href={`mailto:${Dictionary.generalEmail}?subject=I'd like to learn more about the Deacon`}
                     >
                         <p>LEARN MORE</p>
                     </a>

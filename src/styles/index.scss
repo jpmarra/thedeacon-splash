@@ -57,21 +57,35 @@ body {
 
     &__burger-menu {
 
+        &-icon {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transform: scale(0.8);
+        }
+
+        &-social-icon {
+            margin: 20px 20px;
+            font-size: 35px;
+            color: $white;
+        }
+
         &-item {
             @include h1-heading;
             color: $white;
             background: none;
             border: none;
+            margin: 20px 0;
         }
 
         &-button {
-            @include primary-button($white, $black, $white, $goldenPear);
-            @include h3-heading;
+            @include round-button($terracottaDark, $black, $terracottaDark, $black);
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
             display: flex !important;
             justify-content: center;
             align-items: center;
-            width: 80vw;
-            text-decoration: none;
 
         }
     }
@@ -97,9 +111,9 @@ body {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    transform: scale(3);
-    top: 20px !important;
-    right: 20px !important;
+    transform: scale(2.5);
+    top: 22px !important;
+    right: 22px !important;
 }
 
 /* Color/shape of close button cross */
@@ -114,6 +128,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2.5em 1.5em 0;
+  padding-top: 0;
   font-size: 1.15em;
 }
 
@@ -121,6 +136,7 @@ body {
 .bm-item-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -136,6 +152,5 @@ body {
 /* Individual item */
 .bm-item {
     display: inline-block;
-    margin: 30px 0;
     transition: color 0.2s;
 }

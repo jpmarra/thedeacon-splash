@@ -3,11 +3,13 @@ import Dictionary from '../dictionary';
 
 const Map = () => (
     <div id='map' className='deacon__map'>
-        <img
-            className='deacon__map-image'
-            src={Dictionary.map.image}
-            alt={Dictionary.map.imageDescriptor}
-        />
+        <div className='deacon__map-image-container'>
+            <img
+                className='deacon__map-image'
+                src={Dictionary.map.image}
+                alt={Dictionary.map.imageDescriptor}
+            />
+        </div>
         <div className='deacon__map-copy-container'>
             <div className='deacon__map-copy-title'>
                 {Dictionary.map.title}

@@ -9,11 +9,16 @@
     }
 
     &-image {
-        max-height: 120vh;
-        min-height: 875px;
+        &-container {
+            width: 65%;
+        }
+
+        width: 100%;
+        height: 100%;
     }
 
     &-copy {
+        width: 35%;
         &-container {
             margin: 30px;
             margin-bottom: 0;
@@ -33,7 +38,7 @@
 
             &-list {
                 @include body-small;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
 
                 &-option {
                     margin-bottom: 5px;

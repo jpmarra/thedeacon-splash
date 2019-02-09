@@ -43,9 +43,6 @@
         &-title {
             @include h2-heading;
 
-            margin-bottom: 10px;
-
-
             &.CELEBRATE {
                 color: $terracottaDark;
             }
