@@ -20,7 +20,7 @@ class Splash extends Component {
 
     componentDidMount() {
         document.addEventListener('scroll', this.handleArrow);
-        this.wordInterval = setInterval(() => this.changeWord(), 500);
+        this.wordInterval = setInterval(() => this.changeWord(), 1000);
     }
 
     componentWillUnmount() {

@@ -28,7 +28,7 @@ const Footer = () => (
                         {Dictionary.contact.locationLocale}
                     </div>
                 </div>
-                <div className='deacon__footer-info-module'>
+                <div className='deacon__footer-info-module deacon__footer-info-module-contact'>
                     <div className='deacon__footer-info-module-title'>
                         {Dictionary.footer.contactTitle}
                     </div>
@@ -41,10 +41,24 @@ const Footer = () => (
                         </a>
                         <span className='deacon__footer-info-module-bullet' />
                         <a
+                            href={`mailto:${Dictionary.eventsEmail}?subject=Press Inquiry`}
+                            className='deacon__footer-info-module-link'
+                        >
+                            Events
+                        </a>
+                        <span className='deacon__footer-info-module-bullet' />
+                        <a
                             href={`mailto:${Dictionary.pressEmail}?subject=Press Inquiry`}
                             className='deacon__footer-info-module-link'
                         >
-                            {Dictionary.contact.pressTitle}
+                            Press
+                        </a>
+                        <span className='deacon__footer-info-module-bullet' />
+                        <a
+                            href={`mailto:${Dictionary.partnerEmail}?subject=Partnership Inquiry`}
+                            className='deacon__footer-info-module-link'
+                        >
+                            Partnerships
                         </a>
                     </div>
                 </div>

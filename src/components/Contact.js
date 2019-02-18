@@ -27,7 +27,8 @@ const Contact = () => (
                         {Dictionary.contact.generalTitle}
                     </div>
                     <div className='deacon__contact-info-body'>
-                        {Dictionary.contact.generalBody}
+                        <div>{Dictionary.generalEmail}</div>
+                        <div>{Dictionary.eventsEmail}</div>
                     </div>
                 </div>
                 <div className='deacon__contact-info-press'>
@@ -35,7 +36,8 @@ const Contact = () => (
                         {Dictionary.contact.pressTitle}
                     </div>
                     <div className='deacon__contact-info-body'>
-                        {Dictionary.contact.pressBody}
+                        <div>{Dictionary.pressEmail}</div>
+                        <div>{Dictionary.partnerEmail}</div>
                     </div>
                 </div>
             </div>

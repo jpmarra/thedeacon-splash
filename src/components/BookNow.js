@@ -41,7 +41,7 @@ class BookNow extends Component {
             >
             <a
                 className='deacon__book-now'
-                href={`mailto:${Dictionary.generalEmail}?subject=I'd like to book the Deacon`}
+                href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
                 target="_blank"
                 rel='noopener noreferrer'
             >

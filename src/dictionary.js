@@ -7,13 +7,16 @@ import Footer from './assets/images/Deacon-Footer.jpg'
 
 const dictionary = {
     generalEmail: 'hello@thedeaconphl.com',
+    bookingEmail: 'stay@thedeaconphl.com',
     pressEmail: 'press@thedeaconphl.com',
+    partnerEmail: 'partnerships@thedeaconphl.com',
+    eventsEmail: 'events@thedeaconphl.com',
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
     learnMore: 'Learn More',
     splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave this place.',
     openingDate: ' Coming early spring 2019.',
     aboutTitle: 'ABOUT THE DEACON',
-    about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is grounded in an unexpected color palette and mood. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
+    about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is an innovative multi-use space housed in a historic building and reimagined with modern amenities. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
     roomsTitle: 'THE ROOMS',
     rooms: 'Eight uniquely designed rooms, a master chef’s kitchen and entertainment space are just a few of the amenities provided at The Deacon.',
     spaceTitle: 'THE SPACE',
@@ -43,7 +46,7 @@ const dictionary = {
     ],
     history: {
         title: 'HISTORY',
-        copy: 'At the corner of 16th & Christian Street in Center City Philadelphia stands the First African Baptist Church. A building and congregation rich in history. We intend to carry this tradition on with The Deacon as a place to gather, entertain, stay, and collaborate.',
+        copy: 'A circa-1906, Watson & Huckel-designed church is reimagined as The Deacon, a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions, gatherings, and creative projects. The space was previously home to the First African Baptist Church a congregation rich in history and offering services to their surrounding community. The Deacon is a reimagining of the space that honors the building\'s origin of being a place to gather. Eight Bedrooms flank an open area made for unwinding, exploring, and creating lasting memories. Each room features bedding and mattresses by Wright, unique layouts and artwork, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details. Set to open in March 2019.',
         image: History,
         imageDescriptor: 'History'
     },
@@ -86,9 +89,7 @@ const dictionary = {
         locationLocale: 'Philadelphia, PA',
         locationZip: '19146',
         generalTitle: 'GENERAL INQUIRIES',
-        generalBody: 'hello@thedeaconphl.com',
         pressTitle: 'PRESS & PARTNERSHIPS',
-        pressBody: 'press@thedeaconphl.com',
         newsletterTitle: 'Stay up to date',
         newsletterCopy: 'Sign up to receive news and updates from The Deacon'
     },

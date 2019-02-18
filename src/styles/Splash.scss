@@ -36,6 +36,12 @@
         @include for-mobile {
             display: none;
         }
+
+
+        /* bounce animation */
+        &.animated {
+            animation-duration: 1.5s;
+        }
     }
 
     &__content-container {

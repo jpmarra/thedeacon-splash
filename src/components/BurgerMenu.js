@@ -10,7 +10,7 @@ const BurgerMenu = (props) => (
         <button className='deacon__burger-menu-item' onClick={() => props.handleScroll('#contact')}>CONTACT</button>
         <a
             className='deacon__burger-menu-button'
-            href={`mailto:${Dictionary.generalEmail}?subject=I'd like to book the Deacon`}
+            href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
             target="_blank"
             rel='noopener noreferrer'
         >
