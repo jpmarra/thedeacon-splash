@@ -174,7 +174,7 @@
         }
     }
 
-    &-copyright {
+    &-note {
         @include body-small;
 
         margin-top: 60px;
@@ -184,6 +184,20 @@
         @include for-mobile {
             margin-top: 20px;
             margin-bottom: 10px;
+        }
+
+        &-copyright {
+            margin-right: 15px;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $white;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: $goldenPear;
+            }
         }
     }
 }
