@@ -81,7 +81,7 @@ const Footer = () => (
             </div>
             <div className='deacon__footer-note'>
                 <span className='deacon__footer-note-copyright'>&#169; {Dictionary.footer.copyright}</span>
-                <span>Site Design <a href='http://www.andrewmcquiston.com'>A. McQuiston</a> Development <a href='http://www.jpmarra.com'>JP Marra</a></span>
+                <span>Site Design by <a href='http://www.andrewmcquiston.com'>A. McQuiston</a> Development by <a href='http://www.jpmarra.com'>JP Marra</a></span>
             </div>
         </div>
     </div>
