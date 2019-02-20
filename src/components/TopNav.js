@@ -3,7 +3,7 @@ import Dictionary from '../dictionary';
 
 
 const sendEmail = () => {
-    window.location = `mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`;
+    window.location = `mailto:${Dictionary.eventsEmail}?subject=I'd like to book the Deacon`;
 }
 
 const TopNav = ({ handleScroll }) => (

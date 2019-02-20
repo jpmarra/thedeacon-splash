@@ -41,7 +41,7 @@ const Footer = () => (
                         </a>
                         <span className='deacon__footer-info-module-bullet' />
                         <a
-                            href={`mailto:${Dictionary.eventsEmail}?subject=Press Inquiry`}
+                            href={`mailto:${Dictionary.eventsEmail}?subject=I'd like to book an event at the Deacon`}
                             className='deacon__footer-info-module-link'
                         >
                             Events
