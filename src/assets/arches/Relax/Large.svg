@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="342px" height="685px" viewBox="0 0 342 685" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="347px" height="695px" viewBox="0 0 347 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
     <title>Arch/Relax/Large</title>
+    <desc>Created with Sketch.</desc>
     <g id="Arch/Relax/Large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
-        <path d="M513.5,513.5 C513.5,419.35704 475.405714,334.098489 413.769562,272.255524 C351.743555,210.021394 265.876931,171.5 171,171.5 C76.2424788,171.5 -9.52740113,209.924491 -71.5352552,272.020657 C-133.309157,333.882537 -171.5,419.237805 -171.5,513.5" id="Oval-Copy-16" stroke="#D5DDF1" stroke-width="6" transform="translate(171.000000, 342.500000) rotate(-90.000000) translate(-171.000000, -342.500000) "></path>
+        <path d="M519,518.5 C519,424.35704 480.905714,339.098489 419.269562,277.255524 C357.243555,215.021394 271.376931,176.5 176.5,176.5 C81.7424788,176.5 -4.02740113,214.924491 -66.0352552,277.020657 C-127.809157,338.882537 -166,424.237805 -166,518.5" id="Oval-Copy-16" stroke="#D5DDF1" stroke-width="6" transform="translate(176.500000, 347.500000) rotate(-90.000000) translate(-176.500000, -347.500000) "></path>
     </g>
 </svg>

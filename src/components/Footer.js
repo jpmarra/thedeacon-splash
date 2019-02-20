@@ -67,13 +67,13 @@ const Footer = () => (
                         {Dictionary.footer.socialTitle}
                     </div>
                     <div className='deacon__footer-info-module-social-icons'>
-                        <a href='https://www.google.com'>
+                        <a href='https://www.facebook.com/thedeaconphl'>
                             <i className='deacon__footer-info-module-social-icon fab fa-facebook-f'></i>
                         </a>
-                        <a href='https://www.google.com'>
+                        <a href='https://www.instagram.com/thedeaconphl/'>
                             <i className='deacon__footer-info-module-social-icon fab fa-instagram'></i>
                         </a>
-                        <a href='https://www.google.com'>
+                        <a href='https://www.facebook.com/thedeaconphl'>
                             <i className='deacon__footer-info-module-social-icon fab fa-twitter'></i>
                         </a>
                     </div>

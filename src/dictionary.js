@@ -2,6 +2,7 @@ import Celebrate from './assets/images/Deacon-Intro-01_Celebrate.jpg';
 import Relax from './assets/images/Deacon-Intro-02_Relax.jpg';
 import Work from './assets/images/Deacon-Intro-03_Work.jpg'
 import History from './assets/images/Deacon-History.jpg'
+import historyWide from './assets/images/Deacon-History-Wide.jpg'
 import Map from './assets/images/Map-Desktop.jpg'
 import Footer from './assets/images/Deacon-Footer.jpg'
 
@@ -48,6 +49,7 @@ const dictionary = {
         title: 'HISTORY',
         copy: 'A circa-1906, Watson & Huckel-designed church is reimagined as The Deacon, a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions, gatherings, and creative projects. The space was previously home to the First African Baptist Church a congregation rich in history and offering services to their surrounding community. The Deacon is a reimagining of the space that honors the building\'s origin of being a place to gather. Eight Bedrooms flank an open area made for unwinding, exploring, and creating lasting memories. Each room features bedding and mattresses by Wright, unique layouts and artwork, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details. Set to open in March 2019.',
         image: History,
+        wideImage: historyWide,
         imageDescriptor: 'History'
     },
     map: {

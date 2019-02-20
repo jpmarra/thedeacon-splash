@@ -85,6 +85,7 @@ class App extends Component {
                   title={Dictionary.history.title}
                   copy={Dictionary.history.copy}
                   image={Dictionary.history.image}
+                  wideImage={Dictionary.history.wideImage}
                   imageDescriptor={Dictionary.history.imageDescriptor}
               />
               <Map />
