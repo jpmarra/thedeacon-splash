@@ -18,12 +18,26 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            burgerOpen: false
+            burgerOpen: false,
+            windowSize: 'large'
         }
+
+        this.updateDimensions = this.updateDimensions.bind(this)
     }
 
   componentDidMount() {
       this.sweetScroll = new SweetScroll();
+       window.addEventListener("resize", this.updateDimensions);
+  }
+
+  updateDimensions() {
+      if (window.innerWidth < 900) {
+          this.setState({ windowSize: 'small' });
+      } else if (window.innerWidth > 900 && window.innerWidth < 1250) {
+          this.setState({ windowSize: 'medium' });
+      } else if (window.innerWidth > 1250) {
+          this.setState({ windowSize: 'large' });
+      }
   }
 
   handleScroll(element) {
@@ -51,7 +65,7 @@ class App extends Component {
   render() {
     return (
         <div id="App">
-            {window.innerWidth < 900 ?
+            {this.state.windowSize === 'small' ?
                 <BurgerMenu
                     pageWrapId={"page-wrap"}
                     outerContainerId={"App"}
@@ -84,8 +98,8 @@ class App extends Component {
               <History
                   title={Dictionary.history.title}
                   copy={Dictionary.history.copy}
-                  image={Dictionary.history.image}
-                  wideImage={Dictionary.history.wideImage}
+                  windowSize={this.state.windowSize}
+                  image={this.state.windowSize === 'medium' ? Dictionary.history.wideImage : Dictionary.history.image}
                   imageDescriptor={Dictionary.history.imageDescriptor}
               />
               <Map />
