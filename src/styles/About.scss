@@ -39,6 +39,7 @@
         &-left {
             margin-right: 40px;
             width: 50%;
+            align-self: center;
 
             @include for-medium {
                 width: 40%;
@@ -48,6 +49,7 @@
 
         &-right {
             width: 50%;
+            align-self: center;
 
             @include for-medium {
                 width: 40%;
