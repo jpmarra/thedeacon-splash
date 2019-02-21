@@ -11,7 +11,7 @@ class Splash extends Component {
         this.state = {
             currentWordIdx: 0,
             currentWord: 'GATHER',
-            words: ['LAUGH', 'CELEBRATE', 'CREATE', 'RELAX', 'ENJOY'],
+            words: ['GATHER', 'LAUGH', 'CELEBRATE', 'CREATE', 'RELAX', 'ENJOY'],
             arrowOpacity: 1
         }
 
