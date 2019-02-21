@@ -27,6 +27,7 @@ class App extends Component {
 
   componentDidMount() {
       this.sweetScroll = new SweetScroll();
+      this.updateDimensions();
        window.addEventListener("resize", this.updateDimensions);
   }
 
