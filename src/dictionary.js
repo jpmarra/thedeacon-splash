@@ -99,7 +99,7 @@ const dictionary = {
         image: Footer,
         title: 'A place to gather. Coming early spring 2019.',
         contactTitle: 'CONTACT & BOOKING',
-        contactGeneral: 'GENERAL INQUIRES',
+        contactGeneral: 'GENERAL INQUIRIES',
         socialTitle: 'CONNECT WITH US',
         copyright: '2018 The Deacon'
     }

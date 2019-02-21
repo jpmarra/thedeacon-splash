@@ -34,14 +34,14 @@ const Footer = () => (
                     </div>
                     <div className='deacon__footer-info-module-links'>
                         <a
-                            href={`mailto:${Dictionary.generalEmail}?subject=I'd like to learn more about the Deacon`}
+                            href={`mailto:${Dictionary.generalEmail}?subject=I\'d like to learn more about the Deacon`}
                             className='deacon__footer-info-module-link'
                         >
                             {Dictionary.footer.contactGeneral}
                         </a>
                         <span className='deacon__footer-info-module-bullet' />
                         <a
-                            href={`mailto:${Dictionary.eventsEmail}?subject=I'd like to book an event at the Deacon`}
+                            href={`mailto:${Dictionary.eventsEmail}?subject=I\'d like to book an event at the Deacon`}
                             className='deacon__footer-info-module-link'
                         >
                             Events
@@ -67,13 +67,13 @@ const Footer = () => (
                         {Dictionary.footer.socialTitle}
                     </div>
                     <div className='deacon__footer-info-module-social-icons'>
-                        <a href='https://www.facebook.com/thedeaconphl'>
+                        <a a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/thedeaconphl'>
                             <i className='deacon__footer-info-module-social-icon fab fa-facebook-f'></i>
                         </a>
-                        <a href='https://www.instagram.com/thedeaconphl/'>
+                        <a a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/thedeaconphl/'>
                             <i className='deacon__footer-info-module-social-icon fab fa-instagram'></i>
                         </a>
-                        <a href='https://www.facebook.com/thedeaconphl'>
+                        <a a target="_blank" rel="noopener noreferrer" href='https://twitter.com/thedeaconphl'>
                             <i className='deacon__footer-info-module-social-icon fab fa-twitter'></i>
                         </a>
                     </div>
@@ -81,7 +81,14 @@ const Footer = () => (
             </div>
             <div className='deacon__footer-note'>
                 <div className='deacon__footer-note-copyright'>&#169; {Dictionary.footer.copyright}</div>
-                <div>Site Design by <a href='http://www.andrewmcquiston.com'>A. McQuiston</a> Development by <a href='http://www.jpmarra.com'>JP Marra</a></div>
+                <div className='deacon__footer-note-credits'>
+                    <div>
+                        Site Design by <a a target="_blank" rel="noopener noreferrer" href='http://www.andrewmcquiston.com'>A. McQuiston</a>
+                    </div>
+                    <div className='deacon__footer-note-credits-right'>
+                        Development by <a a target="_blank" rel="noopener noreferrer"href='http://www.jpmarra.com'>JP Marra</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
