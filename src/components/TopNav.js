@@ -15,10 +15,8 @@ const TopNav = ({ handleScroll }) => (
         <a
             className='deacon__top-nav-book-now'
             href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
-            target="_blank"
-            rel='noopener noreferrer'
         >
-            BOOK<br/>NOW
+            <span className="button-text">BOOK<br/>NOW</span>
         </a>
     </div>
 );

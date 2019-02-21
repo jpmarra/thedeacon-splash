@@ -55,7 +55,9 @@ class Splash extends Component {
               <div className="deacon-splash__intro">
                 The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.
               </div>
-              <button className="deacon-splash__button" onClick={() => this.props.handleScroll('#about')}>LEARN MORE</button>
+              <button className="deacon-splash__button" onClick={() => this.props.handleScroll('#about')}>
+                <span className="button-text">LEARN MORE</span>
+              </button>
               <Arrow
                 className='deacon-splash__arrow animated infinite bounce'
                 style={arrowStyle}

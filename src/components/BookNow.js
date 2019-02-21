@@ -43,7 +43,7 @@ class BookNow extends Component {
                 className='deacon__book-now'
                 href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
             >
-                BOOK<br/>NOW
+                <span className="button-text">BOOK<br/>NOW</span>
             </a>
             </div>
         )

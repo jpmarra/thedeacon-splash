@@ -37,7 +37,7 @@ class MailchimpForm extends Component {
                     onChange={this.handleChange}
                 />
                 <button className='deacon__contact-newsletter-form-button' type='submit'>
-                    SIGN UP
+                    <span className="button-text">SIGN UP</span>
                 </button>
             </form>
         );
