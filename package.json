@@ -1,6 +1,5 @@
 {
   "name": "thedeacon-splash",
-  "homepage": "http://jpmarra.github.io/thedeacon-splash",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
