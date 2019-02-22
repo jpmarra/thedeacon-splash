@@ -58,8 +58,12 @@ const Contact = () => (
                 </div>
                 <MailchimpUnsubscribe
                     url={url}
-                    render={({ subscribe, status, messaage }) => (
-                        <MailchimpForm onValidated={formData => subscribe(formData)}/>
+                    render={({ subscribe, status, message }) => (
+                        <MailchimpForm
+                            onValidated={formData => subscribe(formData)}
+                            status={status}
+                            message={message}
+                        />
                     )}
                 />
             </div>

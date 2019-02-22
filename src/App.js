@@ -10,6 +10,7 @@ import Map from './components/Map';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Dictionary from './dictionary';
+import { ToastsContainer, ToastsContainerPosition, ToastsStore } from 'react-toasts';
 import 'normalize.css';
 import './styles/index.scss';
 
@@ -108,6 +109,12 @@ class App extends Component {
               <Footer />
               <BookNow fadeInOpacity={this.fadeInOpacity.bind(this)} />
             </div>
+            < ToastsContainer
+                lightBackground
+                className='toast-style'
+                store={ToastsStore}
+                position={ToastsContainerPosition.BOTTOM_CENTER}
+            />
         </div>
     );
   }

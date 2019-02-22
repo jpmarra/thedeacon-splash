@@ -19,13 +19,13 @@ const dictionary = {
     aboutTitle: 'ABOUT THE DEACON',
     about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is an innovative multi-use space housed in a historic building and reimagined with modern amenities. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
     roomsTitle: 'THE ROOMS',
-    rooms: 'Eight uniquely designed rooms, a master chef’s kitchen and entertainment space are just a few of the amenities provided at The Deacon.',
+    rooms: 'Eight Bedrooms made for unwinding, exploring, and creating memorable experiences. Each room features luxury bedding and mattresses by Wright, unique layouts, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details.',
     spaceTitle: 'THE SPACE',
-    space: 'Vaulted ceilings and arched windows set the backdrop of this space’s rich history, while modern touches and design nods make The Deacon a contemporary curated space.',
+    space: 'If you’re like us traveling is not only about where you lay your head but the moments you create before and after. Centered in The Deacon is an ample yet intimate space to gather, plan your day, share recipes, and just enjoy one another’s company.',
     contentModules: [
         {
             title: 'CELEBRATE',
-            copy: 'An intimate wedding, a family gathering, a holiday party in a breathtaking space. Vaulted ceilings and arched windows set the backdrop of this space’s rich history, while modern touches and design nods inspired by the art and humor of John Baldessari, make The Deacon a contemporary curated space.',
+            copy: 'Host an intimate wedding, a family gathering, a holiday party and much more in a breathtaking space full of rich history. Vaulted ceilings and arched windows set the backdrop, while modern touches and design nods inspired by Bauhaus, and the art and humor of John Baldessari, make The Deacon a contemporary curated space.',
             image: Celebrate,
             imageDescriptor: 'Celebrate',
             orientation: 'left'
@@ -39,7 +39,7 @@ const dictionary = {
         },
         {
             title: 'WORK & COLLABORATE',
-            copy: 'Sometimes a more creative environment makes for a more productive and inspired group. We strongly believe this and are making The Deacon available to those who believe the same.',
+            copy: 'Sometimes a more creative environment makes for a more productive and inspired group. Stage a photoshoot for new products, network with clients, or just have a staycation with the team: The Deacon is meant to foster creativity.',
             image: Work,
             imageDescriptor: 'Work',
             orientation: 'left'
