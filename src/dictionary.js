@@ -14,7 +14,7 @@ const dictionary = {
     eventsEmail: 'events@thedeaconphl.com',
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
     learnMore: 'Learn More',
-    splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave this place.',
+    splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave.',
     openingDate: ' Coming early spring 2019.',
     aboutTitle: 'ABOUT THE DEACON',
     about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is an innovative multi-use space housed in a historic building and reimagined with modern amenities. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
@@ -60,13 +60,13 @@ const dictionary = {
         foodOptions: [
             '1. Pumpkin',
             '2. Miles Table',
-            '2. Bob and Barbara’s',
-            '3. Ultimo Coffee',
-            '4. The Side Car Bar & Grille',
-            '5. OCF Coffee',
-            '6. Boot & Saddle',
-            '7. Sprouts Farmers Market',
-            '8. Italian Market'
+            '3. Bob and Barbara’s',
+            '4. Ultimo Coffee',
+            '5. The Side Car Bar & Grille',
+            '6. OCF Coffee',
+            '7. Boot & Saddle',
+            '8. Sprouts Farmers Market',
+            '9. Italian Market'
         ],
         parksTitle: 'PARKS & LANDMARKS',
         parkOptions: [

@@ -41,7 +41,8 @@ const Footer = () => (
                         </a>
                         <span className='deacon__footer-info-module-bullet' />
                         <a
-                            href={`mailto:${Dictionary.eventsEmail}?subject=I\'d like to book an event at the Deacon`}
+                            target="_blank" rel="noopener noreferrer"
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSewpxRgFBUVAKqkErC_6EQ8ffaYc77SDzf9K7SEceXA5CeZ-w/viewform?vc=0&c=0&w=1'
                             className='deacon__footer-info-module-link'
                         >
                             Events
@@ -67,13 +68,13 @@ const Footer = () => (
                         {Dictionary.footer.socialTitle}
                     </div>
                     <div className='deacon__footer-info-module-social-icons'>
-                        <a a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/thedeaconphl'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/thedeaconphl'>
                             <i className='deacon__footer-info-module-social-icon fab fa-facebook-f'></i>
                         </a>
-                        <a a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/thedeaconphl/'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/thedeaconphl/'>
                             <i className='deacon__footer-info-module-social-icon fab fa-instagram'></i>
                         </a>
-                        <a a target="_blank" rel="noopener noreferrer" href='https://twitter.com/thedeaconphl'>
+                        <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/thedeaconphl'>
                             <i className='deacon__footer-info-module-social-icon fab fa-twitter'></i>
                         </a>
                     </div>

@@ -15,9 +15,18 @@
         background: none;
         cursor: pointer;
         transition: all .3s ease-in-out;
+        text-decoration: none;
+        color: $black;
 
         &:hover {
             color: $white;
+        }
+
+        &-link {
+            &-container {
+                display: flex;
+                align-items: center;
+            }
         }
     }
 
