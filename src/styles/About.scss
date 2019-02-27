@@ -1,5 +1,4 @@
 .deacon-about {
-    min-height: 100vh;
     max-width: 100%;
     background-color: $stone;
     background-image: url('../assets/icons/Deacon-Logo-Vertical_M.svg');
@@ -66,7 +65,7 @@
 
         @include for-medium {
             width: 90%;
-            margin: 0;
+            margin: 0 0 40px 0;
             padding: 0 20px;
         }
 
