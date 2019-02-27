@@ -58,30 +58,32 @@ const dictionary = {
         imageDescriptor: 'Map',
         foodTitle: 'FOOD & DRINK',
         foodOptions: [
-            '1. Pumpkin',
-            '2. Miles Table',
-            '3. Bob and Barbara’s',
-            '4. Ultimo Coffee',
-            '5. The Side Car Bar & Grille',
-            '6. OCF Coffee',
-            '7. Boot & Saddle',
-            '8. Sprouts Farmers Market',
-            '9. Italian Market'
+            "1. Pumpkin",
+            "2. Miles Table",
+            "3. Bob and Barbara’s",
+            "4. Ultimo Coffee",
+            "5. The Side Car Bar & Grille",
+            "6. OCF Coffee",
+            "7. Boot & Saddle",
+            "8. Sprouts Farmers Market",
+            "9. Target",
+            "10. Italian Market"
         ],
         parksTitle: 'PARKS & LANDMARKS',
         parkOptions: [
-            '9. Marian Anderson Park',
-            '10. Rittenhouse',
-            '11. City Hall',
-            '12. Magic Gardens',
-            '13. Love Park'
+            "11. Marian Anderson Park",
+            "12. Rittenhouse",
+            "13. City Hall",
+            "14. Love Park",
+            "15. Magic Gardens"
         ],
         transportTitle: 'TRANSPORTATION',
         transportOptions: [
-            '14. South & Lombard Subway',
-            '15. Ellsworth-Federal Subway',
-            '16. Amtrak 30th St. Station',
-            '17. Walnut-Locust Subway'
+            "16. Walnut-Locust Subway",
+            "17. Lombard-South Subway",
+            "18. Ellsworth-Federal Subway",
+            "19. Amtrak 30th St. Station",
+            "20. Lincoln Square Parking"
         ]
     },
     contact: {
