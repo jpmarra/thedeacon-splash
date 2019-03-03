@@ -1,11 +1,6 @@
 import React from 'react';
 import Dictionary from '../dictionary';
 
-
-const sendEmail = () => {
-    window.location = `mailto:${Dictionary.eventsEmail}?subject=I'd like to book an event at the Deacon`;
-}
-
 const TopNav = ({ handleScroll }) => (
     <div className='deacon__top-nav'>
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#about')}>ABOUT</button>

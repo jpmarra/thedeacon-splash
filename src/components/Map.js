@@ -37,7 +37,7 @@ const Category = ({ title, list }) => (
         </div>
         <div className='deacon__map-copy-category-list'>
             {list.map((option) => (
-                <div className='deacon__map-copy-category-list-option'>
+                <div key={option} className='deacon__map-copy-category-list-option'>
                     {option}
                 </div>
             ))}

@@ -84,10 +84,10 @@ const Footer = () => (
                 <div className='deacon__footer-note-copyright'>&#169; {Dictionary.footer.copyright}</div>
                 <div className='deacon__footer-note-credits'>
                     <div>
-                        Site Design by <a a target="_blank" rel="noopener noreferrer" href='http://www.andrewmcquiston.com'>A. McQuiston</a>
+                        Site Design by <a target="_blank" rel="noopener noreferrer" href='http://www.andrewmcquiston.com'>A. McQuiston</a>
                     </div>
                     <div className='deacon__footer-note-credits-right'>
-                        Development by <a a target="_blank" rel="noopener noreferrer"href='http://www.jpmarra.com'>JP Marra</a>
+                        Development by <a target="_blank" rel="noopener noreferrer"href='http://www.jpmarra.com'>JP Marra</a>
                     </div>
                 </div>
             </div>
