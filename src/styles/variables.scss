@@ -14,14 +14,14 @@ $blueDark: #58A293;
 
 /// TEXT MIX INS //
 @mixin primary-header {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 135px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
 }
 
 @mixin h1-heading {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 60px;
     letter-spacing: .75px;
     line-height: 62px;
@@ -29,7 +29,7 @@ $blueDark: #58A293;
 }
 
 @mixin h2-heading {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 44px;
     letter-spacing: .5px;
     line-height: 48px;
@@ -37,7 +37,7 @@ $blueDark: #58A293;
 }
 
 @mixin h3-heading {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 32px;
     letter-spacing: .5px;
     line-height: 30px;
@@ -45,7 +45,7 @@ $blueDark: #58A293;
 }
 
 @mixin h4-heading {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 24px;
     letter-spacing: .5px;
     line-height: 30px;
@@ -53,7 +53,7 @@ $blueDark: #58A293;
 }
 
 @mixin h5-heading {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 18px;
     letter-spacing: .25px;
     line-height: 24px;
@@ -61,7 +61,7 @@ $blueDark: #58A293;
 }
 
 @mixin h6-heading {
-    font-family: 'Krana Fat A';
+    font-family: 'Krana Fat A', 'Helvetica';
     font-size: 16px;
     letter-spacing: .25px;
     line-height: 24px;
@@ -69,28 +69,28 @@ $blueDark: #58A293;
 }
 
 @mixin primary-body {
-    font-family: 'value-serif-bold';
+    font-family: 'value-serif-bold', 'Georgia';
     font-size: 32px;
     letter-spacing: .25px;
     line-height: 48px;
 }
 
 @mixin body-large {
-    font-family: 'value-serif-bold';
+    font-family: 'value-serif-bold', 'Georgia';
     font-size: 18px;
     letter-spacing: .5px;
     line-height: 32px;
 }
 
 @mixin body-small {
-    font-family: 'value-serif-bold';
+    font-family: 'value-serif-bold', 'Georgia';
     font-size: 14px;
     letter-spacing: .5px;
     line-height: 21px;
 }
 
 @mixin label {
-    font-family: 'value-serif-bold';
+    font-family: 'value-serif-bold', 'Georgia';
     font-size: 12px;
     letter-spacing: .25px;
     line-height: 48px;

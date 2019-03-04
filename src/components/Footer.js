@@ -34,7 +34,7 @@ const Footer = () => (
                     </div>
                     <div className='deacon__footer-info-module-links'>
                         <a
-                            href={`mailto:${Dictionary.generalEmail}?subject=I\'d like to learn more about the Deacon`}
+                            href={`mailto:${Dictionary.generalEmail}?subject=I'd like to learn more about the Deacon`}
                             className='deacon__footer-info-module-link'
                         >
                             {Dictionary.footer.contactGeneral}
