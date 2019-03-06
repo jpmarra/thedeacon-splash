@@ -29,16 +29,6 @@
             background-color: #D27154;
         }
 
-        @media only screen and (max-width: 900px) {
-            .coming-soon {
-                flex-direction: column;
-            }
-
-            .space {
-                display: none;
-            }
-        }
-
         .hero-text {
             font-family: 'Krana Fat A', 'Helvetica';
             color: #111111;
@@ -52,14 +42,13 @@
             color: #F6F0E3;
             text-decoration: underline;
             text-decoration-color: #111111;
+            -webkit-text-decoration-color: #111111;
         }
         }
     </style>
     <body>
         <div class="coming-soon">
-            <span class="hero-text">Site coming</span>
-            <span class="hero-text space">&nbsp;</span>
-            <span class="hero-text soon">soon</span>
+            <span class="hero-text">Site coming <span class="hero-text soon">soon</span></span>
         </div>
     </body>
 </html>
