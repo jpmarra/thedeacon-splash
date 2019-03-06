@@ -8,6 +8,28 @@
 
         body {
             margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::after {
+            content: "";
+            background: url("construction-orange.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
         }
 
         @font-face {
@@ -18,35 +40,65 @@
           font-style: normal;
         }
 
+        .logo {
+            width: 40%;
+            margin-bottom: 40px;
+            height: auto;
+        }
+
         .coming-soon {
-            width: 100vw;
-            height: 100vh;
             display: flex;
             text-align: center;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            background-color: #D27154;
         }
 
         .hero-text {
             font-family: 'Krana Fat A', 'Helvetica';
-            color: #111111;
+            color: #F6F0E3;
             margin: 0;
-            font-size: 135px;
-            letter-spacing: 1.25px;
+            font-size: 40px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
         }
 
-        .soon {
-            color: #F6F0E3;
-            text-decoration: underline;
-            text-decoration-color: #111111;
-            -webkit-text-decoration-color: #111111;
+        @media only screen and (max-width: 900px) {
+            .logo {
+                width: 80%;
+                height: auto;
+            }
+
+            .hero-text {
+                font-size: 40px;
+            }
+
+            .space {
+                display: none;
+            }
+        }
+
+        @media only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 480px)
+          and (-webkit-min-device-pixel-ratio: 2) {
+              .logo {
+                  width: 80%;
+                  height: auto;
+              }
+
+              .hero-text {
+                  font-size: 70px;
+              }
+
+              .space {
+                  display: none;
+              }
         }
         }
     </style>
     <body>
+        <img class="logo" src="Logo-Hor-Large-copy.svg" />
         <div class="coming-soon">
             <span class="hero-text">Site coming <span class="hero-text soon">soon</span></span>
         </div>
