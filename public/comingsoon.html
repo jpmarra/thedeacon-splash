@@ -4,9 +4,51 @@
         <meta charset="utf-8">
         <title>The Deacon</title>
     </head>
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        @font-face {
+          font-family: "Krana Fat A";
+          src: url("Krana Fat A.eot"),
+            url("Krana Fat A.woff") format("woff");
+          font-weight: normal;
+          font-style: normal;
+        }
+
+        .coming-soon {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #D27154;
+        }
+
+        .hero-text {
+            display: inline;
+            font-family: 'Krana Fat A', 'Helvetica';
+            color: #111111;
+            margin: 0;
+            font-size: 135px;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
+        }
+
+        .soon {
+            color: #F6F0E3;
+            text-decoration: underline;
+            text-decoration-color: #111111;
+        }
+        }
+    </style>
     <body>
-        <div class='deacon__coming-soon'>
-            <p class="deacon-splash__hero-text">Site coming Soon!!</p>
+        <div class="coming-soon">
+            <span class="hero-text">Site coming</span>&nbsp;
+            <span class="hero-text soon">soon</span>
         </div>
     </body>
 </html>
