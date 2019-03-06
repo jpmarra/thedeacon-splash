@@ -22,14 +22,24 @@
             width: 100vw;
             height: 100vh;
             display: flex;
+            text-align: center;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             background-color: #D27154;
         }
 
+        @media only screen and (max-width: 900px) {
+            .coming-soon {
+                flex-direction: column;
+            }
+
+            .space {
+                display: none;
+            }
+        }
+
         .hero-text {
-            display: inline;
             font-family: 'Krana Fat A', 'Helvetica';
             color: #111111;
             margin: 0;
@@ -47,7 +57,8 @@
     </style>
     <body>
         <div class="coming-soon">
-            <span class="hero-text">Site coming</span>&nbsp;
+            <span class="hero-text">Site coming</span>
+            <span class="hero-text space">&nbsp;</span>
             <span class="hero-text soon">soon</span>
         </div>
     </body>
