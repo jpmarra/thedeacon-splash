@@ -97,14 +97,18 @@
               .space {
                   display: none;
               }
-        }
 
-            @supports (-webkit-overflow-scrolling: touch) {
-            /* CSS specific to iOS devices */
-                .coming-soon {
-                    margin-bottom: 69px;
-                }
-            }
+            @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+            { @media {
+            /*
+              Define here the CSS styles applied only to Safari browsers
+              (any version and any device)
+             */
+                 .coming-soon {
+                     margin-bottom: 44px;
+                 }
+            }}
+        }
         }
     </style>
     <body>
