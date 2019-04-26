@@ -103,7 +103,7 @@ const dictionary = {
         contactTitle: 'CONTACT & BOOKING',
         contactGeneral: 'GENERAL INQUIRIES',
         socialTitle: 'CONNECT WITH US',
-        copyright: '2018 The Deacon'
+        copyright: '2019 The Deacon'
     }
 }
 
