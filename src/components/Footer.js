@@ -89,6 +89,9 @@ const Footer = () => (
                     <div className='deacon__footer-note-credits-right'>
                         Development by <a target="_blank" rel="noopener noreferrer"href='http://www.jpmarra.com'>JP Marra</a>
                     </div>
+                    <div className='deacon__footer-note-credits-right'>
+                        Photos by <a target="_blank" rel="noopener noreferrer"href='https://www.instagram.com/heidisbridge/'>@heidisbridge</a>
+                    </div>
                 </div>
             </div>
         </div>
