@@ -11,7 +11,9 @@ const TopNav = ({ handleScroll }) => (
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#contact')}>CONTACT</button>
         <a
             className='deacon__top-nav-book-now'
-            href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://app.thebookingbutton.com/properties/thedeacondirect'
         >
             <span className="button-text">BOOK<br/>NOW</span>
         </a>

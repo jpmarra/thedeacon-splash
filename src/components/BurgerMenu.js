@@ -12,9 +12,9 @@ const BurgerMenu = (props) => (
         </div>
         <a
             className='deacon__burger-menu-button'
-            href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
-            target="_blank"
+            target='_blank'
             rel='noopener noreferrer'
+            href='https://app.thebookingbutton.com/properties/thedeacondirect'
         >
             BOOK<br/>NOW
         </a>

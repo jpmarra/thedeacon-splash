@@ -15,7 +15,7 @@ const dictionary = {
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
     learnMore: 'Learn More',
     splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave.',
-    openingDate: ' Coming early spring 2019.',
+    openingDate: ' Now open.',
     aboutTitle: 'ABOUT THE DEACON',
     about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is an innovative multi-use space housed in a historic building and reimagined with modern amenities. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
     roomsTitle: 'THE ROOMS',
