@@ -47,7 +47,7 @@ const dictionary = {
     ],
     history: {
         title: 'HISTORY',
-        copy: 'A circa-1906, Watson & Huckel-designed church is reimagined as The Deacon, a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions, gatherings, and creative projects. The space was previously home to the First African Baptist Church a congregation rich in history and offering services to their surrounding community. The Deacon is a reimagining of the space that honors the building\'s origin of being a place to gather. Eight Bedrooms flank an open area made for unwinding, exploring, and creating lasting memories. Each room features bedding and mattresses by Wright, unique layouts and artwork, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details. Set to open in March 2019.',
+        copy: 'A circa-1906, Watson & Huckel-designed church is reimagined as The Deacon, a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions, gatherings, and creative projects. The space was previously home to the First African Baptist Church a congregation rich in history and offering services to their surrounding community. The Deacon is a reimagining of the space that honors the building\'s origin of being a place to gather. Eight Bedrooms flank an open area made for unwinding, exploring, and creating lasting memories. Each room features bedding and mattresses by Wright, unique layouts and artwork, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details.',
         image: History,
         wideImage: historyWide,
         imageDescriptor: 'History'
@@ -99,7 +99,7 @@ const dictionary = {
     },
     footer: {
         image: Footer,
-        title: 'A place to gather. Coming early spring 2019.',
+        title: 'A place to gather.',
         contactTitle: 'CONTACT & BOOKING',
         contactGeneral: 'GENERAL INQUIRIES',
         socialTitle: 'CONNECT WITH US',
