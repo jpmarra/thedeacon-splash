@@ -74,9 +74,6 @@ const Footer = () => (
                         <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/thedeaconphl/'>
                             <i className='deacon__footer-info-module-social-icon fab fa-instagram'></i>
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/thedeaconphl'>
-                            <i className='deacon__footer-info-module-social-icon fab fa-twitter'></i>
-                        </a>
                     </div>
                 </div>
             </div>
