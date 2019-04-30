@@ -41,7 +41,9 @@ class BookNow extends Component {
             >
             <a
                 className='deacon__book-now'
-                href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://app.thebookingbutton.com/properties/thedeacondirect'
             >
                 <span className="button-text">BOOK<br/>NOW</span>
             </a>

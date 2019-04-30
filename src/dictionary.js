@@ -15,7 +15,6 @@ const dictionary = {
     splashIntro: 'The Deacon is a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions and gatherings.',
     learnMore: 'Learn More',
     splashOutro: 'A place to discover and make your own. Whether with friends or family, we promise you won’t want to leave.',
-    openingDate: ' Coming early spring 2019.',
     aboutTitle: 'ABOUT THE DEACON',
     about: 'Located in the Graduate Hospital neighborhood of Philadelphia, The Deacon is an innovative multi-use space housed in a historic building and reimagined with modern amenities. With minimalist design touches and Bauhaus-influenced features, our space meticulously and thoughtfully pairs old and new. The dynamic setting, encourages creativity, connection, and collaboration, offering each guest a memorable experience.',
     roomsTitle: 'THE ROOMS',
@@ -47,7 +46,7 @@ const dictionary = {
     ],
     history: {
         title: 'HISTORY',
-        copy: 'A circa-1906, Watson & Huckel-designed church is reimagined as The Deacon, a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions, gatherings, and creative projects. The space was previously home to the First African Baptist Church a congregation rich in history and offering services to their surrounding community. The Deacon is a reimagining of the space that honors the building\'s origin of being a place to gather. Eight Bedrooms flank an open area made for unwinding, exploring, and creating lasting memories. Each room features bedding and mattresses by Wright, unique layouts and artwork, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details. Set to open in March 2019.',
+        copy: 'A circa-1906, Watson & Huckel-designed church is reimagined as The Deacon, a boutique hotel and event space offering a unique, thoughtfully-curated guest experience, designed for a diverse set of occasions, gatherings, and creative projects. The space was previously home to the First African Baptist Church a congregation rich in history and offering services to their surrounding community. The Deacon is a reimagining of the space that honors the building\'s origin of being a place to gather. Eight Bedrooms flank an open area made for unwinding, exploring, and creating lasting memories. Each room features bedding and mattresses by Wright, unique layouts and artwork, original stained glass windows, Sonos speakers, Wifi and many thoughtfully chosen details.',
         image: History,
         wideImage: historyWide,
         imageDescriptor: 'History'
@@ -99,11 +98,11 @@ const dictionary = {
     },
     footer: {
         image: Footer,
-        title: 'A place to gather. Coming early spring 2019.',
+        title: 'A place to gather.',
         contactTitle: 'CONTACT & BOOKING',
         contactGeneral: 'GENERAL INQUIRIES',
         socialTitle: 'CONNECT WITH US',
-        copyright: '2018 The Deacon'
+        copyright: '2019 The Deacon'
     }
 }
 

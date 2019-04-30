@@ -92,8 +92,7 @@ class App extends Component {
                       />
                   ))}
                   <div className='deacon-splash__outro'>
-                      <span>{Dictionary.splashOutro}</span>&nbsp;
-                      <span className='deacon-splash__outro-opening'>{Dictionary.openingDate}</span>
+                      <span>{Dictionary.splashOutro}</span>
                   </div>
               </div>
               <About />

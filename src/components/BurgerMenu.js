@@ -12,18 +12,15 @@ const BurgerMenu = (props) => (
         </div>
         <a
             className='deacon__burger-menu-button'
-            href={`mailto:${Dictionary.bookingEmail}?subject=I'd like to book the Deacon`}
-            target="_blank"
+            target='_blank'
             rel='noopener noreferrer'
+            href='https://app.thebookingbutton.com/properties/thedeacondirect'
         >
             BOOK<br/>NOW
         </a>
         <div className='deacon__footer-info-module-social-icons'>
             <a href='https://www.facebook.com/thedeaconphl'>
                 <i className='deacon__burger-menu-social-icon fab fa-facebook-f'></i>
-            </a>
-            <a href='https://twitter.com/thedeaconphl'>
-                <i className='deacon__burger-menu-social-icon fab fa-twitter'></i>
             </a>
             <a href='https://www.instagram.com/thedeaconphl/'>
                 <i className='deacon__burger-menu-social-icon fab fa-instagram'></i>
