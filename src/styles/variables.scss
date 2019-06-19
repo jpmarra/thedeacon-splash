@@ -8,7 +8,7 @@ $stone: #F6F0E3;
 $goldenPear: #C9A128;
 $goldenPearLight: #EFCF4F;
 $lavender: #D5DDF1;
-$lavenderDark: #6577A6;
+$lavenderDark: #6575A6;
 $blue: #A2D7CC;
 $blueDark: #58A293;
 
@@ -167,4 +167,19 @@ $blueDark: #58A293;
 
 @mixin between-small-large {
     @media (min-width: 900px) and (max-width: 1300) { @content; }
+}
+
+//HOVER NAV
+@mixin after-dot($color) {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: $color;
+    transform: translateY(0);
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
 }

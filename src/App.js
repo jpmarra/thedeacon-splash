@@ -29,6 +29,11 @@ class App extends Component {
   componentDidMount() {
       this.sweetScroll = new SweetScroll();
       this.updateDimensions();
+      if(window.location.hash) {
+        const id = window.location.hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) element.scrollIntoView();
+      }
        window.addEventListener("resize", this.updateDimensions);
   }
 

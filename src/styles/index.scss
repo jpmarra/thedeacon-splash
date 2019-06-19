@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
   font-family: "value-serif-bold";
   src: url("../assets/fonts/value-serif-bold.eot");
   src: url("../assets/fonts/value-serif-bold.eot?#iefix")
@@ -27,6 +27,8 @@
 @import "/Map.scss";
 @import "/Contact.scss";
 @import "/Footer.scss";
+@import "/PageNav.scss";
+@import "/Gallery.scss";
 
 body {
   margin: 0;

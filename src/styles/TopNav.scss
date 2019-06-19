@@ -1,6 +1,6 @@
 .deacon__top-nav {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 20px;
     display: flex;
 
@@ -10,22 +10,33 @@
 
     &-option {
         @include h5-heading;
-        margin-right: 20px;
-        border: none;
-        background: none;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 15px;
         text-decoration: none;
         color: $black;
-
-        &:hover {
-            color: $white;
-        }
 
         &-link {
             &-container {
                 display: flex;
                 align-items: center;
+            }
+        }
+
+        &:nth-child(5) {
+            padding-right: 30px;
+        }
+
+        &:after {
+            @include after-dot($stone);
+            bottom: 15px;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1 !important;
+                transform: translateY(-0.4rem);
             }
         }
     }

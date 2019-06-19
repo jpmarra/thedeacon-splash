@@ -1,0 +1,74 @@
+.page-nav {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 30px 40px 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $black;
+
+    &--stone {
+        background-color: $stone;
+        border-color: $terracottaDark;
+    }
+
+    &__links {
+        &-link {
+            @include h5-heading;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 15px;
+            color: $black;
+            transition: all .3s ease-in-out;
+
+            &:after {
+                @include after-dot($terracottaDark);
+            }
+
+            &:first-child {
+                padding-left: 0;
+
+                &:after {
+                    left: 35%;
+                }
+            }
+
+            &:last-child {
+                padding-right: 0;
+
+                &:after {
+                    left: 55%;
+                }
+            }
+
+            &.current {
+                &:after {
+                    opacity: 1;
+                    bottom: 1.5px;
+                    transform: none;
+                    transition: none;
+                }
+
+                &:hover {
+                    &:after {
+                        transform: none;
+                    }
+                }
+            }
+
+            &--stone {
+                &:after {
+                    background: $terracottaDark;
+                }
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 1 !important;
+                    transform: translateY(-0.4rem);
+                }
+            }
+        }
+    }
+}
