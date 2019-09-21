@@ -6,6 +6,9 @@ const TopNav = ({ handleScroll }) => (
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#about')}>ABOUT</button>
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#map')}>NEIGHBORHOOD</button>
         <div className='deacon__top-nav-option-link-container'>
+            <a target="_blank" rel="noopener noreferrer" className='deacon__top-nav-option' href='https://experiences.thedeaconphl.com'>EXPERIENCES</a>
+        </div>
+        <div className='deacon__top-nav-option-link-container'>
                 <a target="_blank" rel="noopener noreferrer" className='deacon__top-nav-option' href='https://docs.google.com/forms/d/e/1FAIpQLSewpxRgFBUVAKqkErC_6EQ8ffaYc77SDzf9K7SEceXA5CeZ-w/viewform?vc=0&c=0&w=1'>EVENTS</a>
         </div>
         <button className='deacon__top-nav-option' onClick={() => handleScroll('#contact')}>CONTACT</button>

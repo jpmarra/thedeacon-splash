@@ -8,6 +8,9 @@ const BurgerMenu = (props) => (
         <button className='deacon__burger-menu-item deacon__burger-menu-item-about' onClick={() => props.handleScroll('#about')}>ABOUT</button>
         <button className='deacon__burger-menu-item' onClick={() => props.handleScroll('#contact')}>CONTACT</button>
         <div className='deacon__burger-menu-item deacon__burger-menu-item-container'>
+            <a target="_blank" rel="noopener noreferrer" className='deacon__burger-menu-item' href='https://experiences.thedeaconphl.com'>EXPERIENCES</a>
+        </div>
+        <div className='deacon__burger-menu-item deacon__burger-menu-item-container'>
                 <a target="_blank" rel="noopener noreferrer" className='deacon__burger-menu-item' href='https://docs.google.com/forms/d/e/1FAIpQLSewpxRgFBUVAKqkErC_6EQ8ffaYc77SDzf9K7SEceXA5CeZ-w/viewform?vc=0&c=0&w=1'>EVENTS</a>
         </div>
         <a
