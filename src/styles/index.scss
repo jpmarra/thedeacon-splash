@@ -71,6 +71,10 @@ body {
       background: none;
       border: none;
       margin: 10px 0;
+
+      &:focus {
+        outline: 0;
+      }
     }
 
     &-button {
