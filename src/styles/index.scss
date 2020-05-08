@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "value-serif-bold";
-  src: url("../assets/fonts/value-serif-bold.eot");
-  src: url("../assets/fonts/value-serif-bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/value-serif-bold.woff") format("woff"),
-    url("../assets/fonts/value-serif-bold.woff2") format("woff2"),
-    url("../assets/fonts/value-serif-bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "value-serif-bold";
+    src: url("../assets/fonts/value-serif-bold.eot");
+    src: url("../assets/fonts/value-serif-bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("../assets/fonts/value-serif-bold.woff") format("woff"),
+        url("../assets/fonts/value-serif-bold.woff2") format("woff2"),
+        url("../assets/fonts/value-serif-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Krana Fat A";
-  src: url("../assets/fonts/Krana Fat A.eot"),
-    url("../assets/fonts/Krana Fat A.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Krana Fat A";
+    src: url("../assets/fonts/Krana Fat A.eot"),
+        url("../assets/fonts/Krana Fat A.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @import "/variables.scss";
@@ -27,136 +27,147 @@
 @import "/Map.scss";
 @import "/Contact.scss";
 @import "/Footer.scss";
+@import "/Modal.scss";
 
 body {
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .deacon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  &__book-now {
-    @include round-button($terracottaDark, $black, $black, $stone);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    animation-duration: 0.5s;
-    z-index: 1;
-  }
-
-  &__burger-menu {
-    &-icon {
-      position: absolute;
-      top: 20px;
-      left: 0;
-      transform: scale(0.8);
+    &__book-now {
+        @include round-button($terracottaDark, $black, $black, $stone);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        animation-duration: 0.5s;
+        z-index: 1;
     }
 
-    &-social-icon {
-      margin: 20px 20px;
-      font-size: 35px;
-      color: $white;
-    }
+    &__burger-menu {
+        &-icon {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transform: scale(0.8);
+        }
 
-    &-item {
-      @include h1-heading;
-      color: $white;
-      text-decoration: none;
-      background: none;
-      border: none;
-      margin: 10px 0;
+        &-social-icon {
+            margin: 20px 20px;
+            font-size: 35px;
+            color: $white;
+        }
 
-      &:focus {
-        outline: 0;
-      }
-    }
+        &-item {
+            @include h1-heading;
+            color: $white;
+            text-decoration: none;
+            background: none;
+            border: none;
+            margin: 10px 0;
 
-    &-button {
-      @include round-button($terracottaDark, $black, $terracottaDark, $black);
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      display: flex !important;
-      justify-content: center;
-      align-items: center;
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        &-button {
+            @include round-button(
+                $terracottaDark,
+                $black,
+                $terracottaDark,
+                $black
+            );
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
     }
-  }
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
-  width: 36px;
-  height: 30px;
-  right: 20px;
-  top: 20px;
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: $black;
+    background: $black;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  transform: scale(2.5);
-  top: 22px !important;
-  right: 22px !important;
+    transform: scale(2.5);
+    top: 22px !important;
+    right: 22px !important;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: $white;
+    background: $white;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: $black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2.5em 1.5em 0;
-  padding-top: 0;
-  font-size: 1.15em;
+    background: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 1.5em 0;
+    padding-top: 0;
+    font-size: 1.15em;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 #page-wrap {
-  /* Prevent sidebar from showing a scrollbar on page */
-  overflow: auto;
+    /* Prevent sidebar from showing a scrollbar on page */
+    overflow: auto;
 }
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
-  transition: color 0.2s;
+    display: inline-block;
+    transition: color 0.2s;
 }
 
 .button-text {
-  padding-top: 4px;
+    padding-top: 4px;
 }
 
 .toast {
-  font-family: "value-serif-bold";
+    font-family: "value-serif-bold";
+}
+
+#modal {
+    position: relative;
+    z-index: 4999;
 }
