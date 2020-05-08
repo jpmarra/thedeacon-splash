@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { useLockBodyScroll } from "../hooks";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 
-const Modal = ({ handleModalToggle }) =>
-    ReactDOM.createPortal(
+const Modal = ({ handleModalToggle }) => {
+    useLockBodyScroll();
+    return ReactDOM.createPortal(
         <aside className="modal">
             <section className="modal__inner">
                 <button
@@ -36,5 +38,6 @@ const Modal = ({ handleModalToggle }) =>
         </aside>,
         document.getElementById("modal")
     );
+};
 
 export default Modal;
