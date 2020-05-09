@@ -60,6 +60,14 @@
             padding: 0;
             cursor: pointer;
 
+            &:hover {
+                color: $terracottaDark;
+
+                * {
+                    fill: currentColor;
+                }
+            }
+
             @include for-mobile {
                 width: 15px;
                 height: 15px;
