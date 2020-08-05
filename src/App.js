@@ -25,7 +25,7 @@ class App extends Component {
         this.state = {
             burgerOpen: false,
             windowSize: "large",
-            isModalOpen: true
+            isModalOpen: false
         };
 
         this.updateDimensions = this.updateDimensions.bind(this);
