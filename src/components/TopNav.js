@@ -1,5 +1,4 @@
 import React from "react";
-import Dictionary from "../dictionary";
 
 const TopNav = ({ handleScroll }) => (
     <div className="deacon__top-nav">

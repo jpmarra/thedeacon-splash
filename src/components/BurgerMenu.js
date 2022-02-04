@@ -1,6 +1,5 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
-import Dictionary from "../dictionary";
 import { ReactComponent as Logo } from "../assets/icons/Logo-Hor-White.svg";
 
 const BurgerMenu = props => (
