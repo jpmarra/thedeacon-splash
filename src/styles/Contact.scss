@@ -48,7 +48,7 @@
             padding: 20px;
             width: 30%;
             margin-right: 10px;
-            background-image: url('../assets/arches/Arch-mobile-location.svg');
+            background-image: url("../assets/arches/Arch-mobile-location.svg");
             background-position: center;
             background-repeat: no-repeat;
 
@@ -71,12 +71,11 @@
             }
         }
 
-
         &-general {
             padding: 20px;
             width: 30%;
             margin-right: 10px;
-            background-image: url('../assets/arches/Arch-mobile-general.svg');
+            background-image: url("../assets/arches/Arch-mobile-general.svg");
             background-position: center;
             background-repeat: no-repeat;
 
@@ -96,7 +95,7 @@
         &-press {
             padding: 20px;
             width: 30%;
-            background-image: url('../assets/arches/Arch-mobile-press.svg');
+            background-image: url("../assets/arches/Arch-mobile-press.svg");
             background-position: center;
             background-repeat: no-repeat;
 
@@ -120,7 +119,13 @@
     }
 
     &-button {
-        @include primary-button($black, $white, $terracottaDark, $white, $terracottaDark);
+        @include primary-button(
+            $black,
+            $white,
+            $terracottaDark,
+            $white,
+            $terracottaDark
+        );
         width: 210px;
         text-decoration: none;
         display: flex;
@@ -179,7 +184,7 @@
             }
 
             &-input {
-                @include body-small
+                @include body-small;
                 width: 350px;
                 margin-right: 20px;
                 background: none;
@@ -199,7 +204,13 @@
             }
 
             &-button {
-                @include primary-button($black, $white, $terracottaDark, $white, $terracottaDark);
+                @include primary-button(
+                    $black,
+                    $white,
+                    $terracottaDark,
+                    $white,
+                    $terracottaDark
+                );
 
                 @include for-mobile {
                     width: 100%;
