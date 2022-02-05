@@ -73,6 +73,7 @@
                 border-bottom: 2px solid $black !important;
                 border-radius: none !important;
                 margin-bottom: 5px;
+                -webkit-appearance: none !important;
 
                 &::placeholder {
                     color: $grey;
