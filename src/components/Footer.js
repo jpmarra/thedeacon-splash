@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Dictionary from "../dictionary";
 import { ReactComponent as Logo } from "../assets/icons/Deacon-Footer_Logo-Large.svg";
 
@@ -42,14 +43,12 @@ const Footer = () => (
                             {Dictionary.footer.contactGeneral}
                         </a>
                         <span className="deacon__footer-info-module-bullet" />
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSewpxRgFBUVAKqkErC_6EQ8ffaYc77SDzf9K7SEceXA5CeZ-w/viewform?vc=0&c=0&w=1"
+                        <Link
+                            to="/events"
                             className="deacon__footer-info-module-link"
                         >
                             Events
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="deacon__footer-info-module">

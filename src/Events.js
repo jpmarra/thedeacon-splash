@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import EventForm from "./components/EventForm";
 import { ReactComponent as Logo } from "./assets/icons/Logo-Hor-Large.svg";
 import Footer from "./components/Footer";
 import { Helmet } from "react-helmet";
