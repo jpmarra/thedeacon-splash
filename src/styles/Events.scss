@@ -1,0 +1,36 @@
+.events-page {
+    position: relative;
+    background-color: $terracottaDark;
+
+    &__link {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    &__container {
+        width: 100%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form {
+        &--header {
+            @include h1-heading;
+            margin: 0;
+        }
+
+        &--desc {
+            @include body-large;
+            margin-bottom: 10px;
+        }
+    }
+}

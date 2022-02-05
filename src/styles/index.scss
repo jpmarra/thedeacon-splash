@@ -18,16 +18,18 @@
     font-style: normal;
 }
 
-@import "/variables.scss";
-@import "/TopNav.scss";
-@import "/Splash.scss";
-@import "/ContentModule.scss";
-@import "/About.scss";
-@import "/History.scss";
-@import "/Map.scss";
-@import "/Contact.scss";
-@import "/Footer.scss";
-@import "/Modal.scss";
+@import "./variables.scss";
+@import "./TopNav.scss";
+@import "./Splash.scss";
+@import "./ContentModule.scss";
+@import "./About.scss";
+@import "./History.scss";
+@import "./Map.scss";
+@import "./Contact.scss";
+@import "./Footer.scss";
+@import "./Modal.scss";
+@import "./EventForm.scss";
+@import "./Events.scss";
 
 body {
     margin: 0;

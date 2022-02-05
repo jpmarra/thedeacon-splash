@@ -1,0 +1,66 @@
+.event-form {
+    @include body-large;
+    width: 450px;
+    padding: 60px;
+    background-color: $stone;
+    &__field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    label {
+        @include h5-heading;
+        margin-bottom: 5px;
+    }
+    input {
+        background: none;
+        border: none;
+        border-radius: none;
+        border-bottom: 2px solid $black;
+        margin-bottom: 5px;
+
+        &::placeholder {
+            color: $grey;
+        }
+    }
+
+    &__message {
+        @include body-small;
+        font-size: 12px;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        color: $terracottaDark;
+
+        &--phone {
+            margin-right: 10px;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        width: 100%;
+
+        &--number {
+            width: 75%;
+            margin-right: 15px;
+        }
+
+        &--ext {
+            width: 20%;
+        }
+    }
+
+    &__button {
+        @include primary-button(
+            $black,
+            $white,
+            $terracottaDark,
+            $white,
+            $terracottaDark
+        );
+    }
+}
