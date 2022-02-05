@@ -11,6 +11,11 @@
         position: absolute;
         top: 40px;
         left: 40px;
+
+        @include for-mobile {
+            top: 20px;
+            left: 20px;
+        }
     }
 
     &__container {
@@ -26,11 +31,75 @@
         &--header {
             @include h1-heading;
             margin: 0;
+
+            @include for-mobile {
+                padding: 0 15px;
+            }
         }
 
         &--desc {
             @include body-large;
             margin-bottom: 10px;
+
+            @include for-mobile {
+                @include body-small;
+                padding: 0 15px;
+            }
+        }
+
+        #form-root {
+            @include body-large;
+            background-color: $stone;
+            padding: 40px 60px;
+
+            @include for-mobile {
+                padding: 15px;
+            }
+
+            h2 {
+                margin: 0;
+                @include h3-heading;
+                margin: 0;
+            }
+
+            label {
+                @include h5-heading;
+                margin-bottom: 5px;
+            }
+
+            input {
+                background: none;
+                border: none !important;
+                border-radius: none;
+                border-bottom: 2px solid $black !important;
+                margin-bottom: 5px;
+
+                &::placeholder {
+                    color: $grey;
+                }
+            }
+
+            .checkbox {
+                margin-right: 5px;
+            }
+
+            .row_details_header {
+                margin-top: 15px;
+            }
+
+            .button {
+                @include primary-button(
+                    $black,
+                    $white,
+                    $terracottaDark,
+                    $white,
+                    $terracottaDark
+                );
+            }
+
+            .ts_powered_by {
+                display: none;
+            }
         }
     }
 }

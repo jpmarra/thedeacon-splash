@@ -1,7 +1,7 @@
 .deacon-about {
     max-width: 100%;
     background-color: $stone;
-    background-image: url('../assets/icons/Deacon-Logo-Vertical_M.svg');
+    background-image: url("../assets/icons/Deacon-Logo-Vertical_M.svg");
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -68,7 +68,7 @@
         }
 
         @include for-mobile {
-            background-image: url('../assets/icons/Deacon-Logo-Vertical_M.svg');
+            background-image: url("../assets/icons/Deacon-Logo-Vertical_M.svg");
             background-size: contain;
             background-repeat: no-repeat;
             width: inherit;
@@ -170,7 +170,13 @@
     }
 
     &__button {
-        @include primary-button($black, $white, $terracottaDark, $white, $terracottaDark)
+        @include primary-button(
+            $black,
+            $white,
+            $terracottaDark,
+            $white,
+            $terracottaDark
+        );
         text-decoration: none;
         display: flex;
         justify-content: center;
