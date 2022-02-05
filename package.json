@@ -47,6 +47,5 @@
     },
     "devDependencies": {
         "sass": "^1.49.7"
-    },
-    "proxy": "https://deaconphl.com/"
+    }
 }
