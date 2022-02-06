@@ -1,6 +1,6 @@
 .events-page {
     position: relative;
-    background-color: $terracottaDark;
+    background-color: $blue;
 
     &__link {
         margin-top: 60px;
@@ -30,16 +30,20 @@
     &__form {
         &--header {
             @include h1-heading;
+            color: $blueDark;
+            text-align: center;
             margin: 0;
 
             @include for-mobile {
-                padding: 0 15px;
+                @include h2-heading;
+                padding: 0 10px;
             }
         }
 
         &--desc {
             @include body-large;
             margin-bottom: 10px;
+            text-align: center;
 
             @include for-mobile {
                 @include body-small;
@@ -68,9 +72,9 @@
             }
 
             input {
-                background: none;
-                border: none !important;
-                border-bottom: 2px solid $black !important;
+                background: $white;
+                padding: 5px;
+                border: 1px solid $black !important;
                 border-radius: none !important;
                 margin-bottom: 5px;
                 -webkit-appearance: none !important;
@@ -78,6 +82,10 @@
                 &::placeholder {
                     color: $grey;
                 }
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: $terracottaDark;
             }
 
             .checkbox {
@@ -100,6 +108,19 @@
 
             .ts_powered_by {
                 display: none;
+            }
+
+            #tsLeadSuccessMessage {
+                @include h1-heading;
+                margin: 0;
+
+                @include for-mobile {
+                    @include h2-heading;
+                }
+            }
+
+            #errorExplanation {
+                padding: 15px;
             }
         }
     }
