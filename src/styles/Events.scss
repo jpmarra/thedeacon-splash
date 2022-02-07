@@ -62,12 +62,12 @@
 
             h2 {
                 margin: 0;
-                @include h3-heading;
                 margin: 0;
             }
 
             label {
-                @include h5-heading;
+                @include body-small;
+                font-weight: bold;
                 margin-bottom: 5px;
             }
 
@@ -108,15 +108,6 @@
 
             .ts_powered_by {
                 display: none;
-            }
-
-            #tsLeadSuccessMessage {
-                @include h1-heading;
-                margin: 0;
-
-                @include for-mobile {
-                    @include h2-heading;
-                }
             }
 
             #errorExplanation {
