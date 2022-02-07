@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Dictionary from "../dictionary";
 import { ReactComponent as Logo } from "../assets/icons/Deacon-Footer_Logo-Large.svg";
 
@@ -43,12 +42,12 @@ const Footer = () => (
                             {Dictionary.footer.contactGeneral}
                         </a>
                         <span className="deacon__footer-info-module-bullet" />
-                        <Link
-                            to="/events"
+                        <a
+                            href="/events"
                             className="deacon__footer-info-module-link"
                         >
                             Events
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className="deacon__footer-info-module">
