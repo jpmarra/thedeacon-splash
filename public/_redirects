@@ -1,3 +1,5 @@
+/*    /index.html   200
+
 # Redirect domain aliases to primary domain
 https://www.deaconphl.com/* https://www.thedeaconphl.com/:splat 301!
 
