@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import { ReactComponent as Logo } from "../assets/icons/Logo-Hor-White.svg";
 
@@ -17,14 +18,9 @@ const BurgerMenu = props => (
             CONTACT
         </button>
         <div className="deacon__burger-menu-item deacon__burger-menu-item-container">
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="deacon__burger-menu-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSewpxRgFBUVAKqkErC_6EQ8ffaYc77SDzf9K7SEceXA5CeZ-w/viewform?vc=0&c=0&w=1"
-            >
+            <Link to="/events" className="deacon__burger-menu-item">
                 EVENTS
-            </a>
+            </Link>
         </div>
         <a
             className="deacon__burger-menu-button"
