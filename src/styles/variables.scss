@@ -1,104 +1,110 @@
 ///COLORS ///
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #111111;
-$terracottaDark: #D27154;
-$terracottaMedium: #DC7A5B;
-$terracottaLight: #EB9B82;
-$stone: #F6F0E3;
-$goldenPear: #C9A128;
-$goldenPearLight: #EFCF4F;
-$lavender: #D5DDF1;
-$lavenderDark: #6577A6;
-$blue: #A2D7CC;
-$blueDark: #58A293;
+$grey: #707070;
+$terracottaDark: #d27154;
+$terracottaMedium: #dc7a5b;
+$terracottaLight: #eb9b82;
+$stone: #f6f0e3;
+$goldenPear: #c9a128;
+$goldenPearLight: #efcf4f;
+$lavender: #d5ddf1;
+$lavenderDark: #6577a6;
+$blue: #a2d7cc;
+$blueDark: #58a293;
 
 /// TEXT MIX INS //
 @mixin primary-header {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 135px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
 }
 
 @mixin h1-heading {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 60px;
-    letter-spacing: .75px;
+    letter-spacing: 0.75px;
     line-height: 62px;
     text-transform: uppercase;
 }
 
 @mixin h2-heading {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 44px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 48px;
     text-transform: uppercase;
 }
 
 @mixin h3-heading {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 32px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
 @mixin h4-heading {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 24px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
 @mixin h5-heading {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 18px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     line-height: 24px;
     text-transform: uppercase;
 }
 
 @mixin h6-heading {
-    font-family: 'Krana Fat A', 'Helvetica';
+    font-family: "Krana Fat A", "Helvetica";
     font-size: 16px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     line-height: 24px;
     text-transform: uppercase;
 }
 
 @mixin primary-body {
-    font-family: 'value-serif-bold', 'Georgia';
+    font-family: "value-serif-bold", "Georgia";
     font-size: 32px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     line-height: 48px;
 }
 
 @mixin body-large {
-    font-family: 'value-serif-bold', 'Georgia';
+    font-family: "value-serif-bold", "Georgia";
     font-size: 18px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 32px;
 }
 
 @mixin body-small {
-    font-family: 'value-serif-bold', 'Georgia';
+    font-family: "value-serif-bold", "Georgia";
     font-size: 14px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 21px;
 }
 
 @mixin label {
-    font-family: 'value-serif-bold', 'Georgia';
+    font-family: "value-serif-bold", "Georgia";
     font-size: 12px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     line-height: 48px;
 }
 
-
 // ELEMENT MIXINS //
-@mixin primary-button($background, $text, $hover-background, $hover-text, $hover-border) {
+@mixin primary-button(
+    $background,
+    $text,
+    $hover-background,
+    $hover-text,
+    $hover-border
+) {
     @include h5-heading;
 
     height: 50px;
@@ -110,7 +116,7 @@ $blueDark: #58A293;
     background-color: $background;
     color: $text;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     border: 1.5px solid transparent;
 
     &:hover {
@@ -133,7 +139,7 @@ $blueDark: #58A293;
     color: $text;
     text-decoration: none;
     text-align: center;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @include for-mobile {
         height: 80px;
@@ -155,16 +161,24 @@ $blueDark: #58A293;
 
 // BREAKPOINTS
 @mixin for-mobile {
-  @media (max-width: 900px) { @content; }
+    @media (max-width: 900px) {
+        @content;
+    }
 }
 @mixin for-medium {
-  @media (max-width: 1199px) { @content; }
+    @media (max-width: 1199px) {
+        @content;
+    }
 }
 
 @mixin for-large {
-    @media (max-width: 1300) { @content; }
+    @media (max-width: 1300) {
+        @content;
+    }
 }
 
 @mixin between-small-large {
-    @media (min-width: 900px) and (max-width: 1300) { @content; }
+    @media (min-width: 900px) and (max-width: 1300) {
+        @content;
+    }
 }

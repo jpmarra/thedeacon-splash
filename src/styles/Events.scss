@@ -1,0 +1,118 @@
+.events-page {
+    position: relative;
+    background-color: $blue;
+
+    &__link {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+
+        @include for-mobile {
+            top: 20px;
+            left: 20px;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form {
+        &--header {
+            @include h1-heading;
+            color: $blueDark;
+            text-align: center;
+            margin: 0;
+
+            @include for-mobile {
+                @include h2-heading;
+                padding: 0 10px;
+            }
+        }
+
+        &--desc {
+            @include body-large;
+            margin-bottom: 10px;
+            text-align: center;
+
+            @include for-mobile {
+                @include body-small;
+                padding: 0 15px;
+            }
+        }
+
+        #form-root {
+            @include body-large;
+            background-color: $stone;
+            padding: 40px 60px;
+
+            @include for-mobile {
+                padding: 15px;
+            }
+
+            h2 {
+                margin: 0;
+                margin: 0;
+            }
+
+            label {
+                @include body-small;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            input {
+                background: $white;
+                padding: 5px;
+                border: 1px solid $black !important;
+                border-radius: none !important;
+                margin-bottom: 5px;
+                -webkit-appearance: none !important;
+
+                &::placeholder {
+                    color: $grey;
+                }
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: $terracottaDark;
+            }
+
+            .checkbox {
+                margin-right: 5px;
+            }
+
+            .row_details_header {
+                margin-top: 15px;
+            }
+
+            .button {
+                @include primary-button(
+                    $black,
+                    $white,
+                    $terracottaDark,
+                    $white,
+                    $terracottaDark
+                );
+            }
+
+            .ts_powered_by {
+                display: none;
+            }
+
+            #errorExplanation {
+                padding: 15px;
+            }
+        }
+    }
+}
