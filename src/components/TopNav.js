@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TopNav = ({ handleScroll }) => (
     <div className="deacon__top-nav">
@@ -16,9 +15,9 @@ const TopNav = ({ handleScroll }) => (
             NEIGHBORHOOD
         </button>
         <div className="deacon__top-nav-option-link-container">
-            <Link className="deacon__top-nav-option" to="/events">
+            <a className="deacon__top-nav-option" href="/events">
                 EVENTS
-            </Link>
+            </a>
         </div>
         <button
             className="deacon__top-nav-option"

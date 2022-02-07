@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import { ReactComponent as Logo } from "../assets/icons/Logo-Hor-White.svg";
 
-const BurgerMenu = props => (
+const BurgerMenu = (props) => (
     <Menu {...props} width={"100%"} right>
         <button
             className="deacon__burger-menu-item deacon__burger-menu-item-about"
@@ -18,9 +17,9 @@ const BurgerMenu = props => (
             CONTACT
         </button>
         <div className="deacon__burger-menu-item deacon__burger-menu-item-container">
-            <Link to="/events" className="deacon__burger-menu-item">
+            <a href="/events" className="deacon__burger-menu-item">
                 EVENTS
-            </Link>
+            </a>
         </div>
         <a
             className="deacon__burger-menu-button"
