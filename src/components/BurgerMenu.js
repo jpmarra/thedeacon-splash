@@ -10,12 +10,6 @@ const BurgerMenu = (props) => (
         >
             ABOUT
         </button>
-        <button
-            className="deacon__burger-menu-item"
-            onClick={() => props.handleScroll("#contact")}
-        >
-            CONTACT
-        </button>
         <div className="deacon__burger-menu-item deacon__burger-menu-item-container">
             <a href="/events" className="deacon__burger-menu-item">
                 EVENTS
@@ -25,7 +19,7 @@ const BurgerMenu = (props) => (
             className="deacon__burger-menu-button"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://app.thebookingbutton.com/properties/thedeacondirect"
+            href="https://checkout.lodgify.com/the-deacon/en/#/359175 "
         >
             BOOK
             <br />

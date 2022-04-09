@@ -19,17 +19,11 @@ const TopNav = ({ handleScroll }) => (
                 EVENTS
             </a>
         </div>
-        <button
-            className="deacon__top-nav-option"
-            onClick={() => handleScroll("#contact")}
-        >
-            CONTACT
-        </button>
         <a
             className="deacon__top-nav-book-now"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://app.thebookingbutton.com/properties/thedeacondirect"
+            href="https://checkout.lodgify.com/the-deacon/en/#/359175 "
         >
             <span className="button-text">
                 BOOK

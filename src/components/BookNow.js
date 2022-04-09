@@ -42,7 +42,7 @@ class BookNow extends Component {
                     className="deacon__book-now"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://app.thebookingbutton.com/properties/thedeacondirect"
+                    href="https://checkout.lodgify.com/the-deacon/en/#/359175 "
                 >
                     <span className="button-text">
                         BOOK

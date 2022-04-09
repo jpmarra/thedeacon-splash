@@ -35,9 +35,9 @@ const Contact = () => (
             </div>
             <a
                 className="deacon__contact-button"
-                href={`mailto:${Dictionary.generalEmail}?subject=I'd like to learn more about the Deacon`}
+                href="https://my.matterport.com/show/?m=7HCKRivQxgY"
             >
-                <span className="button-text">GET IN TOUCH</span>
+                <span className="button-text">VIRTUAL TOUR</span>
             </a>
             <div className="deacon__contact-newsletter-container">
                 <div className="deacon__contact-newsletter-text">
